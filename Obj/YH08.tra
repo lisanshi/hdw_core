@@ -1,0 +1,30 @@
+*** Creating Trace Output File '.\Obj\YH08.tra' Ok.
+### Preparing for ADS-LD.
+### Creating ADS-LD Command Line
+### List of Objects: adding '".\obj\stm32f10x_it.o"'
+### List of Objects: adding '".\obj\main.o"'
+### List of Objects: adding '".\obj\function.o"'
+### List of Objects: adding '".\obj\i2c_ee.o"'
+### List of Objects: adding '".\obj\spi_flash.o"'
+### List of Objects: adding '".\obj\lcd.o"'
+### List of Objects: adding '".\obj\sysdate.o"'
+### List of Objects: adding '".\obj\stm32f10x_vector.o"'
+### List of Objects: adding '".\STM32F10xR.LIB"'
+### List of Objects: adding '".\HPIR.lib"'
+### List of Objects: adding '".\motion.lib"'
+### List of Objects: adding '".\obj\cr4_fft_256_stm32.o"'
+### ADS-LD Command completed:
+--cpu Cortex-M3 ".\obj\stm32f10x_it.o" ".\obj\main.o" ".\obj\function.o" ".\obj\i2c_ee.o" ".\obj\spi_flash.o" ".\obj\lcd.o" ".\obj\sysdate.o" ".\obj\stm32f10x_vector.o" D:\collin\project\project_HCBT-02_HDW_improvement\HCBT-02_HDW\STM32F10xR.LIB D:\collin\project\project_HCBT-02_HDW_improvement\HCBT-02_HDW\HPIR.lib D:\collin\project\project_HCBT-02_HDW_improvement\HCBT-02_HDW\motion.lib ".\obj\cr4_fft_256_stm32.o" --library_type=microlib --strict --scatter ".\Obj\YH08.sct" 
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\Lst\YH08.map" -o ".\Obj\YH08.axf"### Preparing Environment (PrepEnvAds)
+### ADS-LD Output File: '.\Obj\YH08.axf'
+### ADS-LD Command File: '.\Obj\YH08.lnp'
+### Checking for dirty Components...
+### Creating CmdFile '.\Obj\YH08.lnp', Handle=0x00000A4C
+### Writing '.lnp' file
+### ADS-LD Command file '.\Obj\YH08.lnp' is ready.
+### ADS-LD: About to start ADS-LD Thread.
+### ADS-LD: executed with 0 errors
+### Updating obj list
+### LDADS_file() completed.

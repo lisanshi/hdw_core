@@ -1,0 +1,324 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+D:\collin\project\project_HCBT-02_HDW_improvement\HCBT-02_HDW\Project.uvproj
+Project File Date:  11/03/2014
+
+<h2>Output:</h2>
+Build target 'YH08'
+compiling stm32f10x_it.c...
+compiling main.c...
+main.c(1319): warning:  #177-D: variable "i" was declared but never referenced
+compiling function.c...
+function.c(2342): warning:  #177-D: variable "buf" was declared but never referenced
+function.c(3334): warning:  #223-D: function "strlen" declared implicitly
+function.c(3352): warning:  #223-D: function "strlen" declared implicitly
+function.c(3381): warning:  #223-D: function "strlen" declared implicitly
+function.c(3392): warning:  #223-D: function "strlen" declared implicitly
+function.c(3393): warning:  #223-D: function "strlen" declared implicitly
+function.c(3396): warning:  #223-D: function "strlen" declared implicitly
+function.c(3413): warning:  #223-D: function "strlen" declared implicitly
+function.c(3453): warning:  #223-D: function "strlen" declared implicitly
+function.c(3512): warning:  #223-D: function "strlen" declared implicitly
+function.c(3517): warning:  #223-D: function "strlen" declared implicitly
+function.c(3702): warning:  #223-D: function "strlen" declared implicitly
+function.c(3834): warning:  #223-D: function "strlen" declared implicitly
+function.c(3986): warning:  #223-D: function "strlen" declared implicitly
+function.c(4039): warning:  #223-D: function "strlen" declared implicitly
+function.c(4072): warning:  #223-D: function "strlen" declared implicitly
+function.c(4107): warning:  #223-D: function "strlen" declared implicitly
+compiling sysdate.c...
+linking...
+.\Obj\YH08.axf: Error: L6218E: Undefined symbol Abs_backup (referred from function.o).
+Target not created
+Build target 'YH08'
+compiling main.c...
+main.c(1320): warning:  #177-D: variable "i" was declared but never referenced
+linking...
+Program Size: Code=53424 RO-data=2480 RW-data=1556 ZI-data=37508  
+FromELF: creating hex file...
+".\Obj\YH08.axf" - 0 Error(s), 1 Warning(s).
+Build target 'YH08'
+compiling main.c...
+main.c(800): error:  #20: identifier "absC12_backup" is undefined
+main.c(801): error:  #20: identifier "absC13_backup" is undefined
+main.c(1327): warning:  #177-D: variable "i" was declared but never referenced
+compiling function.c...
+function.c(2344): warning:  #177-D: variable "buf" was declared but never referenced
+function.c(3336): warning:  #223-D: function "strlen" declared implicitly
+function.c(3354): warning:  #223-D: function "strlen" declared implicitly
+function.c(3383): warning:  #223-D: function "strlen" declared implicitly
+function.c(3394): warning:  #223-D: function "strlen" declared implicitly
+function.c(3395): warning:  #223-D: function "strlen" declared implicitly
+function.c(3398): warning:  #223-D: function "strlen" declared implicitly
+function.c(3415): warning:  #223-D: function "strlen" declared implicitly
+function.c(3455): warning:  #223-D: function "strlen" declared implicitly
+function.c(3514): warning:  #223-D: function "strlen" declared implicitly
+function.c(3519): warning:  #223-D: function "strlen" declared implicitly
+function.c(3704): warning:  #223-D: function "strlen" declared implicitly
+function.c(3836): warning:  #223-D: function "strlen" declared implicitly
+function.c(3988): warning:  #223-D: function "strlen" declared implicitly
+function.c(4041): warning:  #223-D: function "strlen" declared implicitly
+function.c(4074): warning:  #223-D: function "strlen" declared implicitly
+function.c(4109): warning:  #223-D: function "strlen" declared implicitly
+Target not created
+Build target 'YH08'
+compiling stm32f10x_it.c...
+compiling main.c...
+main.c(1327): warning:  #177-D: variable "i" was declared but never referenced
+compiling function.c...
+function.c(2343): warning:  #177-D: variable "buf" was declared but never referenced
+function.c(3335): warning:  #223-D: function "strlen" declared implicitly
+function.c(3353): warning:  #223-D: function "strlen" declared implicitly
+function.c(3382): warning:  #223-D: function "strlen" declared implicitly
+function.c(3393): warning:  #223-D: function "strlen" declared implicitly
+function.c(3394): warning:  #223-D: function "strlen" declared implicitly
+function.c(3397): warning:  #223-D: function "strlen" declared implicitly
+function.c(3414): warning:  #223-D: function "strlen" declared implicitly
+function.c(3454): warning:  #223-D: function "strlen" declared implicitly
+function.c(3513): warning:  #223-D: function "strlen" declared implicitly
+function.c(3518): warning:  #223-D: function "strlen" declared implicitly
+function.c(3703): warning:  #223-D: function "strlen" declared implicitly
+function.c(3835): warning:  #223-D: function "strlen" declared implicitly
+function.c(3987): warning:  #223-D: function "strlen" declared implicitly
+function.c(4040): warning:  #223-D: function "strlen" declared implicitly
+function.c(4073): warning:  #223-D: function "strlen" declared implicitly
+function.c(4108): warning:  #223-D: function "strlen" declared implicitly
+compiling sysdate.c...
+linking...
+.\Obj\YH08.axf: Error: L6218E: Undefined symbol absC12_backup (referred from main.o).
+.\Obj\YH08.axf: Error: L6218E: Undefined symbol absC13_backup (referred from main.o).
+Target not created
+Build target 'YH08'
+compiling main.c...
+main.c(1329): warning:  #177-D: variable "i" was declared but never referenced
+linking...
+Program Size: Code=53496 RO-data=2480 RW-data=1556 ZI-data=38148  
+FromELF: creating hex file...
+".\Obj\YH08.axf" - 0 Error(s), 1 Warning(s).
+Build target 'YH08'
+compiling main.c...
+main.c(1329): warning:  #177-D: variable "i" was declared but never referenced
+compiling function.c...
+function.c(1081): warning:  #186-D: pointless comparison of unsigned integer with zero
+function.c(1090): error:  #20: identifier "c13_St" is undefined
+function.c(1095): error:  #20: identifier "dt1_st" is undefined
+function.c(1096): error:  #20: identifier "c13_St" is undefined
+function.c(1096): error:  #20: identifier "dt2_st" is undefined
+function.c(2369): warning:  #177-D: variable "buf" was declared but never referenced
+function.c(3361): warning:  #223-D: function "strlen" declared implicitly
+function.c(3379): warning:  #223-D: function "strlen" declared implicitly
+function.c(3408): warning:  #223-D: function "strlen" declared implicitly
+function.c(3419): warning:  #223-D: function "strlen" declared implicitly
+function.c(3420): warning:  #223-D: function "strlen" declared implicitly
+function.c(3423): warning:  #223-D: function "strlen" declared implicitly
+function.c(3440): warning:  #223-D: function "strlen" declared implicitly
+function.c(3480): warning:  #223-D: function "strlen" declared implicitly
+function.c(3539): warning:  #223-D: function "strlen" declared implicitly
+function.c(3544): warning:  #223-D: function "strlen" declared implicitly
+function.c(3729): warning:  #223-D: function "strlen" declared implicitly
+function.c(3861): warning:  #223-D: function "strlen" declared implicitly
+function.c(4013): warning:  #223-D: function "strlen" declared implicitly
+function.c(4066): warning:  #223-D: function "strlen" declared implicitly
+function.c(4099): warning:  #223-D: function "strlen" declared implicitly
+function.c(4134): warning:  #223-D: function "strlen" declared implicitly
+Target not created
+Build target 'YH08'
+compiling stm32f10x_it.c...
+compiling main.c...
+main.c(1329): warning:  #177-D: variable "i" was declared but never referenced
+compiling function.c...
+function.c(1081): warning:  #186-D: pointless comparison of unsigned integer with zero
+function.c(1090): error:  #20: identifier "c13_St" is undefined
+function.c(1095): error:  #20: identifier "dt1_st" is undefined
+function.c(1096): error:  #20: identifier "c13_St" is undefined
+function.c(1096): error:  #20: identifier "dt2_st" is undefined
+function.c(2369): warning:  #177-D: variable "buf" was declared but never referenced
+function.c(3361): warning:  #223-D: function "strlen" declared implicitly
+function.c(3379): warning:  #223-D: function "strlen" declared implicitly
+function.c(3408): warning:  #223-D: function "strlen" declared implicitly
+function.c(3419): warning:  #223-D: function "strlen" declared implicitly
+function.c(3420): warning:  #223-D: function "strlen" declared implicitly
+function.c(3423): warning:  #223-D: function "strlen" declared implicitly
+function.c(3440): warning:  #223-D: function "strlen" declared implicitly
+function.c(3480): warning:  #223-D: function "strlen" declared implicitly
+function.c(3539): warning:  #223-D: function "strlen" declared implicitly
+function.c(3544): warning:  #223-D: function "strlen" declared implicitly
+function.c(3729): warning:  #223-D: function "strlen" declared implicitly
+function.c(3861): warning:  #223-D: function "strlen" declared implicitly
+function.c(4013): warning:  #223-D: function "strlen" declared implicitly
+function.c(4066): warning:  #223-D: function "strlen" declared implicitly
+function.c(4099): warning:  #223-D: function "strlen" declared implicitly
+function.c(4134): warning:  #223-D: function "strlen" declared implicitly
+compiling sysdate.c...
+Target not created
+Build target 'YH08'
+compiling function.c...
+function.c(1081): warning:  #186-D: pointless comparison of unsigned integer with zero
+function.c(1090): error:  #20: identifier "c13_St" is undefined
+function.c(1095): error:  #20: identifier "dt1_st" is undefined
+function.c(1096): error:  #20: identifier "c13_St" is undefined
+function.c(1096): error:  #20: identifier "dt2_st" is undefined
+function.c(2369): warning:  #177-D: variable "buf" was declared but never referenced
+function.c(3361): warning:  #223-D: function "strlen" declared implicitly
+function.c(3379): warning:  #223-D: function "strlen" declared implicitly
+function.c(3408): warning:  #223-D: function "strlen" declared implicitly
+function.c(3419): warning:  #223-D: function "strlen" declared implicitly
+function.c(3420): warning:  #223-D: function "strlen" declared implicitly
+function.c(3423): warning:  #223-D: function "strlen" declared implicitly
+function.c(3440): warning:  #223-D: function "strlen" declared implicitly
+function.c(3480): warning:  #223-D: function "strlen" declared implicitly
+function.c(3539): warning:  #223-D: function "strlen" declared implicitly
+function.c(3544): warning:  #223-D: function "strlen" declared implicitly
+function.c(3729): warning:  #223-D: function "strlen" declared implicitly
+function.c(3861): warning:  #223-D: function "strlen" declared implicitly
+function.c(4013): warning:  #223-D: function "strlen" declared implicitly
+function.c(4066): warning:  #223-D: function "strlen" declared implicitly
+function.c(4099): warning:  #223-D: function "strlen" declared implicitly
+function.c(4134): warning:  #223-D: function "strlen" declared implicitly
+Target not created
+Build target 'YH08'
+compiling function.c...
+function.c(1081): error:  #268: declaration may not appear after executable statement in block
+function.c(1082): error:  #268: declaration may not appear after executable statement in block
+function.c(1083): warning:  #186-D: pointless comparison of unsigned integer with zero
+function.c(1098): error:  #20: identifier "c13_St" is undefined
+function.c(2371): warning:  #177-D: variable "buf" was declared but never referenced
+function.c(3363): warning:  #223-D: function "strlen" declared implicitly
+function.c(3381): warning:  #223-D: function "strlen" declared implicitly
+function.c(3410): warning:  #223-D: function "strlen" declared implicitly
+function.c(3421): warning:  #223-D: function "strlen" declared implicitly
+function.c(3422): warning:  #223-D: function "strlen" declared implicitly
+function.c(3425): warning:  #223-D: function "strlen" declared implicitly
+function.c(3442): warning:  #223-D: function "strlen" declared implicitly
+function.c(3482): warning:  #223-D: function "strlen" declared implicitly
+function.c(3541): warning:  #223-D: function "strlen" declared implicitly
+function.c(3546): warning:  #223-D: function "strlen" declared implicitly
+function.c(3731): warning:  #223-D: function "strlen" declared implicitly
+function.c(3863): warning:  #223-D: function "strlen" declared implicitly
+function.c(4015): warning:  #223-D: function "strlen" declared implicitly
+function.c(4068): warning:  #223-D: function "strlen" declared implicitly
+function.c(4101): warning:  #223-D: function "strlen" declared implicitly
+function.c(4136): warning:  #223-D: function "strlen" declared implicitly
+Target not created
+Build target 'YH08'
+compiling function.c...
+function.c(1081): error:  #268: declaration may not appear after executable statement in block
+function.c(1082): error:  #268: declaration may not appear after executable statement in block
+function.c(1083): warning:  #186-D: pointless comparison of unsigned integer with zero
+function.c(2371): warning:  #177-D: variable "buf" was declared but never referenced
+function.c(3363): warning:  #223-D: function "strlen" declared implicitly
+function.c(3381): warning:  #223-D: function "strlen" declared implicitly
+function.c(3410): warning:  #223-D: function "strlen" declared implicitly
+function.c(3421): warning:  #223-D: function "strlen" declared implicitly
+function.c(3422): warning:  #223-D: function "strlen" declared implicitly
+function.c(3425): warning:  #223-D: function "strlen" declared implicitly
+function.c(3442): warning:  #223-D: function "strlen" declared implicitly
+function.c(3482): warning:  #223-D: function "strlen" declared implicitly
+function.c(3541): warning:  #223-D: function "strlen" declared implicitly
+function.c(3546): warning:  #223-D: function "strlen" declared implicitly
+function.c(3731): warning:  #223-D: function "strlen" declared implicitly
+function.c(3863): warning:  #223-D: function "strlen" declared implicitly
+function.c(4015): warning:  #223-D: function "strlen" declared implicitly
+function.c(4068): warning:  #223-D: function "strlen" declared implicitly
+function.c(4101): warning:  #223-D: function "strlen" declared implicitly
+function.c(4136): warning:  #223-D: function "strlen" declared implicitly
+Target not created
+Build target 'YH08'
+compiling function.c...
+function.c(1086): warning:  #186-D: pointless comparison of unsigned integer with zero
+function.c(2374): warning:  #177-D: variable "buf" was declared but never referenced
+function.c(3366): warning:  #223-D: function "strlen" declared implicitly
+function.c(3384): warning:  #223-D: function "strlen" declared implicitly
+function.c(3413): warning:  #223-D: function "strlen" declared implicitly
+function.c(3424): warning:  #223-D: function "strlen" declared implicitly
+function.c(3425): warning:  #223-D: function "strlen" declared implicitly
+function.c(3428): warning:  #223-D: function "strlen" declared implicitly
+function.c(3445): warning:  #223-D: function "strlen" declared implicitly
+function.c(3485): warning:  #223-D: function "strlen" declared implicitly
+function.c(3544): warning:  #223-D: function "strlen" declared implicitly
+function.c(3549): warning:  #223-D: function "strlen" declared implicitly
+function.c(3734): warning:  #223-D: function "strlen" declared implicitly
+function.c(3866): warning:  #223-D: function "strlen" declared implicitly
+function.c(4018): warning:  #223-D: function "strlen" declared implicitly
+function.c(4071): warning:  #223-D: function "strlen" declared implicitly
+function.c(4104): warning:  #223-D: function "strlen" declared implicitly
+function.c(4139): warning:  #223-D: function "strlen" declared implicitly
+linking...
+Program Size: Code=53728 RO-data=2480 RW-data=1556 ZI-data=38452  
+FromELF: creating hex file...
+".\Obj\YH08.axf" - 0 Error(s), 18 Warning(s).
+Build target 'YH08'
+compiling function.c...
+function.c(1086): warning:  #186-D: pointless comparison of unsigned integer with zero
+function.c(2374): warning:  #177-D: variable "buf" was declared but never referenced
+function.c(3366): warning:  #223-D: function "strlen" declared implicitly
+function.c(3384): warning:  #223-D: function "strlen" declared implicitly
+function.c(3413): warning:  #223-D: function "strlen" declared implicitly
+function.c(3424): warning:  #223-D: function "strlen" declared implicitly
+function.c(3425): warning:  #223-D: function "strlen" declared implicitly
+function.c(3428): warning:  #223-D: function "strlen" declared implicitly
+function.c(3445): warning:  #223-D: function "strlen" declared implicitly
+function.c(3485): warning:  #223-D: function "strlen" declared implicitly
+function.c(3544): warning:  #223-D: function "strlen" declared implicitly
+function.c(3549): warning:  #223-D: function "strlen" declared implicitly
+function.c(3734): warning:  #223-D: function "strlen" declared implicitly
+function.c(3866): warning:  #223-D: function "strlen" declared implicitly
+function.c(4018): warning:  #223-D: function "strlen" declared implicitly
+function.c(4071): warning:  #223-D: function "strlen" declared implicitly
+function.c(4104): warning:  #223-D: function "strlen" declared implicitly
+function.c(4139): warning:  #223-D: function "strlen" declared implicitly
+linking...
+Program Size: Code=53728 RO-data=2480 RW-data=1556 ZI-data=38452  
+FromELF: creating hex file...
+".\Obj\YH08.axf" - 0 Error(s), 18 Warning(s).
+Build target 'YH08'
+compiling function.c...
+function.c(1086): warning:  #186-D: pointless comparison of unsigned integer with zero
+function.c(2378): warning:  #177-D: variable "buf" was declared but never referenced
+function.c(3370): warning:  #223-D: function "strlen" declared implicitly
+function.c(3388): warning:  #223-D: function "strlen" declared implicitly
+function.c(3417): warning:  #223-D: function "strlen" declared implicitly
+function.c(3428): warning:  #223-D: function "strlen" declared implicitly
+function.c(3429): warning:  #223-D: function "strlen" declared implicitly
+function.c(3432): warning:  #223-D: function "strlen" declared implicitly
+function.c(3449): warning:  #223-D: function "strlen" declared implicitly
+function.c(3489): warning:  #223-D: function "strlen" declared implicitly
+function.c(3548): warning:  #223-D: function "strlen" declared implicitly
+function.c(3553): warning:  #223-D: function "strlen" declared implicitly
+function.c(3738): warning:  #223-D: function "strlen" declared implicitly
+function.c(3870): warning:  #223-D: function "strlen" declared implicitly
+function.c(4022): warning:  #223-D: function "strlen" declared implicitly
+function.c(4075): warning:  #223-D: function "strlen" declared implicitly
+function.c(4108): warning:  #223-D: function "strlen" declared implicitly
+function.c(4143): warning:  #223-D: function "strlen" declared implicitly
+linking...
+Program Size: Code=54208 RO-data=2480 RW-data=1556 ZI-data=38452  
+FromELF: creating hex file...
+".\Obj\YH08.axf" - 0 Error(s), 18 Warning(s).
+Build target 'YH08'
+compiling function.c...
+function.c(1086): warning:  #186-D: pointless comparison of unsigned integer with zero
+function.c(2378): warning:  #177-D: variable "buf" was declared but never referenced
+function.c(3370): warning:  #223-D: function "strlen" declared implicitly
+function.c(3388): warning:  #223-D: function "strlen" declared implicitly
+function.c(3417): warning:  #223-D: function "strlen" declared implicitly
+function.c(3428): warning:  #223-D: function "strlen" declared implicitly
+function.c(3429): warning:  #223-D: function "strlen" declared implicitly
+function.c(3432): warning:  #223-D: function "strlen" declared implicitly
+function.c(3449): warning:  #223-D: function "strlen" declared implicitly
+function.c(3489): warning:  #223-D: function "strlen" declared implicitly
+function.c(3548): warning:  #223-D: function "strlen" declared implicitly
+function.c(3553): warning:  #223-D: function "strlen" declared implicitly
+function.c(3738): warning:  #223-D: function "strlen" declared implicitly
+function.c(3870): warning:  #223-D: function "strlen" declared implicitly
+function.c(4022): warning:  #223-D: function "strlen" declared implicitly
+function.c(4075): warning:  #223-D: function "strlen" declared implicitly
+function.c(4108): warning:  #223-D: function "strlen" declared implicitly
+function.c(4143): warning:  #223-D: function "strlen" declared implicitly
+linking...
+Program Size: Code=54208 RO-data=2480 RW-data=1556 ZI-data=38452  
+FromELF: creating hex file...
+".\Obj\YH08.axf" - 0 Error(s), 18 Warning(s).
