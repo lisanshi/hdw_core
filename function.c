@@ -1082,6 +1082,8 @@ void ChannelMeas(u8 Pnum)
                 cbc13 = ((((m_lCfC13[5] * xbc13 + m_lCfC13[4]) * xbc13 + m_lCfC13[3]) * xbc13 + m_lCfC13[2]) * xbc13 + m_lCfC13[1]) * xbc13 + m_lCfC13[0];
                 csc13 = ((((m_lCfC13[5] * xsc13 + m_lCfC13[4]) * xsc13 + m_lCfC13[3]) * xsc13 + m_lCfC13[2]) * xsc13 + m_lCfC13[1]) * xsc13 + m_lCfC13[0];
 				//根据浓度定位5个点，做标准曲线
+				//collin mask20141222
+				/*			
 
 				for(i=19;i>=0;i--)
 				{
@@ -1103,6 +1105,7 @@ void ChannelMeas(u8 Pnum)
                 csc12 = ((((m_lCfC12_st[5] * xsc12 + m_lCfC12_st[4]) * xsc12 + m_lCfC12_st[3]) * xsc12 + m_lCfC12_st[2]) * xsc12 + m_lCfC12_st[1]) * xsc12 + m_lCfC12_st[0];
                 cbc13 = ((((m_lCfC13_st[5] * xbc13 + m_lCfC13_st[4]) * xbc13 + m_lCfC13_st[3]) * xbc13 + m_lCfC13_st[2]) * xbc13 + m_lCfC13_st[1]) * xbc13 + m_lCfC13_st[0];
                 csc13 = ((((m_lCfC13_st[5] * xsc13 + m_lCfC13_st[4]) * xsc13 + m_lCfC13_st[3]) * xsc13 + m_lCfC13_st[2]) * xsc13 + m_lCfC13_st[1]) * xsc13 + m_lCfC13_st[0];
+				*/
 				//end
 				
 				//3.浓度比
