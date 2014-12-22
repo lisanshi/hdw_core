@@ -10,112 +10,108 @@
 #define ABS(A) (((A)>0)?(A):(-(A)))
 u8 const mon_table[12]={31,28,31,30,31,30,31,31,30,31,30,31};
 unsigned char table[] ="0123456789";
-unsigned char RQ[]="ÈÕÆÚ£º";
-unsigned char SJ[]="Ê±¼ä£º"; 
-unsigned char YQBH[]="ÒÇÆ÷±àºÅ";
-unsigned char GQJC[]="¹âÇ¿¼ì²â";
-unsigned char GLQXNBZ[]= "     ¹ıÂËÆ÷Ğ§ÄÜ²»×ã!    ";
-unsigned char GHGLQ[]  = "      Çë¸ü»»¹ıÂËÆ÷!     ";
-unsigned char GLQXNLH[]= "     ¹ıÂËÆ÷Ğ§ÄÜÁ¼ºÃ!    ";
-unsigned char GLQXN[]=   "    ¹ıÂËÆ÷Ğ§ÄÜ£º";
-unsigned char WDJC[]= "       ÎÂ¶È¼ì²â         ";
-unsigned char WDZC[]=    "½á¹û£º   ÎÂ¶ÈÕı³££¡     ";
-unsigned char WDYC[]=  "½á¹û£º   ÎÂ¶ÈÒì³££¡     ";
-unsigned char YLZC[]=  "½á¹û£º  ÆøÃÜĞÔÕı³£      ";
-unsigned char LQ[]=    "½á¹û£º    Â©Æø !        ";
-unsigned char YLJC[]=  "        Ñ¹Á¦¼ì²â        ";
-unsigned char DYJJC[]= "       ´òÓ¡»ú¼ì²â       ";
-unsigned char GLQJC[]= "       ¹ıÂËÆ÷¼ì²â       ";
-unsigned char DQND[]="µ×ÆøÅ¨¶È£º";
-unsigned char YQND[]="ÑùÆøÅ¨¶È£º";
-unsigned char JCJG[]= "       ¼ì²â½á¹û        ";
-//unsigned char JCJG[]=  "     ÓÄÃÅÂİ¸Ë¾ú£¨Hp£©   ";
-unsigned char DOB[]="DOB(¡ë) = ";
+unsigned char RQ[]="æ—¥æœŸï¼š";
+unsigned char SJ[]="æ—¶é—´ï¼š"; 
+unsigned char YQBH[]="ä»ªå™¨ç¼–å·";
+unsigned char GQJC[]="å…‰å¼ºæ£€æµ‹";
+unsigned char GLQXNBZ[]= "     è¿‡æ»¤å™¨æ•ˆèƒ½ä¸è¶³!    ";
+unsigned char GHGLQ[]  = "      è¯·æ›´æ¢è¿‡æ»¤å™¨!     ";
+unsigned char GLQXNLH[]= "     è¿‡æ»¤å™¨æ•ˆèƒ½è‰¯å¥½!    ";
+unsigned char GLQXN[]=   "    è¿‡æ»¤å™¨æ•ˆèƒ½ï¼š";
+unsigned char WDJC[]= "       æ¸©åº¦æ£€æµ‹         ";
+unsigned char WDZC[]=    "ç»“æœï¼š   æ¸©åº¦æ­£å¸¸ï¼     ";
+unsigned char WDYC[]=  "ç»“æœï¼š   æ¸©åº¦å¼‚å¸¸ï¼     ";
+unsigned char YLZC[]=  "ç»“æœï¼š  æ°”å¯†æ€§æ­£å¸¸      ";
+unsigned char LQ[]=    "ç»“æœï¼š    æ¼æ°” !        ";
+unsigned char YLJC[]=  "        å‹åŠ›æ£€æµ‹        ";
+unsigned char DYJJC[]= "       æ‰“å°æœºæ£€æµ‹       ";
+unsigned char GLQJC[]= "       è¿‡æ»¤å™¨æ£€æµ‹       ";
+unsigned char DQND[]="åº•æ°”æµ“åº¦ï¼š";
+unsigned char YQND[]="æ ·æ°”æµ“åº¦ï¼š";
+unsigned char JCJG[]= "       æ£€æµ‹ç»“æœ        ";
+unsigned char DOB[]="DOB(â€°) = ";
 unsigned char table1[]="------------------------";
 unsigned char table2[]="************************";
 unsigned char T12[]=   "  C12= ";
 unsigned char T13[]=   "  C13= ";
-unsigned char GQ13[]=  "Ê±¼ä   C12     C13    ";
-unsigned char   KG[]="   ";
-unsigned char   KG1[]="  ";
-unsigned char GQJG[]=  "      ¹âÇ¿¼ì²â½á¹û      ";
+unsigned char GQ13[]=  "æ—¶é—´   C12     C13    ";
+unsigned char KG[]="   ";
+unsigned char KG1[]="  ";
+unsigned char GQJG[]=  "      å…‰å¼ºæ£€æµ‹ç»“æœ      ";
 unsigned char D[]=".";
-unsigned char BFH[]="£¥";
-unsigned char YPBH[]="ÑùÆ·±àºÅ: ";
-//collin modify20141124
-//unsigned char DOBFJZ[]="DOB·Ö½çÖµ:";
-unsigned char DOBFJZ[]="DOBÕı³£·¶Î§<";
-//end 
+unsigned char BFH[]="ï¼…";
+unsigned char YPBH[]="æ ·å“ç¼–å·: ";
+unsigned char DOBFJZ[]="DOBæ­£å¸¸èŒƒå›´<";
 unsigned char J[]="+-:";
-unsigned char YIN[]="ÒõĞÔ";
-unsigned char YANG[]="ÑôĞÔ";
+unsigned char YIN[]="é˜´æ€§";
+unsigned char YANG[]="é˜³æ€§";
 unsigned char KH[]="()";
-unsigned char NDD[] ="½á   ¹û£ºÆøÌåÅ¨¶ÈÌ«µÍ£¡";
-unsigned char QDBC[] ="½á   ¹û£º Æø´ü±»°Î³ö£¡ ";
-unsigned char TDH[]="¼ì²âÍ¨µÀ£º ";
-unsigned char DYZC[]="       ´òÓ¡Õı³£!       ";
-unsigned char ZLKZ[]="     ÖÊÁ¿¿ØÖÆµÚ";
-unsigned char CI[]="´Î";
-unsigned char CS[]="´ÎÊı";
-unsigned char BZWC1[]="  ±ê×¼Îó²î£º  ";
-unsigned char PJZ[]="    Æ½¾ùÖµ£º  ";
-unsigned char ZK[]=  "      ÖÊÁ¿¿ØÖÆ½á¹û     ";
-unsigned char GQPJ[]=  "¹âÇ¿Æ½¾ùÖµ£º    ";
-unsigned char GQBZWC[]=  "¹âÇ¿±ê×¼Îó²î£º    ";
-unsigned char BYXS[]=  "±äÒìÏµÊı£º    ";
+unsigned char NDD[] ="ç»“   æœï¼šæ°”ä½“æµ“åº¦å¤ªä½ï¼";
+unsigned char QDBC[] ="ç»“   æœï¼š æ°”è¢‹è¢«æ‹”å‡ºï¼ ";
+unsigned char TDH[]="æ£€æµ‹é€šé“ï¼š ";
+unsigned char DYZC[]="       æ‰“å°æ­£å¸¸!       ";
+unsigned char ZLKZ[]="     è´¨é‡æ§åˆ¶ç¬¬";
+unsigned char CI[]="æ¬¡";
+unsigned char CS[]="æ¬¡æ•°";
+unsigned char BZWC1[]="  æ ‡å‡†è¯¯å·®ï¼š  ";
+unsigned char PJZ[]="    å¹³å‡å€¼ï¼š  ";
+unsigned char ZK[]=  "      è´¨é‡æ§åˆ¶ç»“æœ     ";
+unsigned char GQPJ[]=  "å…‰å¼ºå¹³å‡å€¼ï¼š    ";
+unsigned char GQBZWC[]=  "å…‰å¼ºæ ‡å‡†è¯¯å·®ï¼š    ";
+unsigned char BYXS[]=  "å˜å¼‚ç³»æ•°ï¼š    ";
 unsigned char MPA[]=  "MPa";
-unsigned char DQYL[]=  "µ±Ç°Ñ¹Á¦Öµ£º";
-unsigned char JYR[]=  "¼ìÑéÈËÔ±£º_____________";
-unsigned char XM[]=   "ĞÕ    Ãû£º_____________";
-unsigned char JG[]=   "¼ì²â½á¹û£º";
+unsigned char DQYL[]=  "å½“å‰å‹åŠ›å€¼ï¼š";
+unsigned char JYR[]=  "æ£€éªŒäººå‘˜ï¼š_____________";
+unsigned char XM[]=   "å§“    åï¼š_____________";
+unsigned char JG[]=   "æ£€æµ‹ç»“æœï¼š";
 tm timer;
 u8	ID[30];
 u8	sampleChanged;
-u8  flag_dob,flag_cz,cuozhi;//DOB·Ö½çÖµ£»´íÖµÅĞ¶¨±êÖ¾£»´íÖµÅĞ¶Ï±ê×¼
-//²ÉÑùÉè¶¨
+u8  flag_dob,flag_cz,cuozhi;//DOBåˆ†ç•Œå€¼ï¼›é”™å€¼åˆ¤å®šæ ‡å¿—ï¼›é”™å€¼åˆ¤æ–­æ ‡å‡†
+//é‡‡æ ·è®¾å®š
 u8		ADCIndex;
 u16		ADCResult[36];
 u16		ADCConv[ADCNUM]; 
 u8	keynum,sleeptime,testcount;
 u8	flag_err[6];
 u16	Num=0,DiapIndex=1;
-s16	BZWC,DOB1,DOB2,DOB3,DOB4,DOB5,DOB6;//ÖÊÁ¿¿ØÖÆ±ê×¼Îó²î£¬
-//È«¾ÖÏµÍ³±äÁ¿
+s16	BZWC,DOB1,DOB2,DOB3,DOB4,DOB5,DOB6;//è´¨é‡æ§åˆ¶æ ‡å‡†è¯¯å·®ï¼Œ
+//å…¨å±€ç³»ç»Ÿå˜é‡
 extern volatile unsigned int Sys_Status	= Sys_Undefined;
 extern u8 m_bChopper;
 u16 chopperDelaytimes=0;
 u8 prnerr=0;
 volatile u8 cw_status=FORWARD;
-//ÇĞ¹âÆ¬µç»ú¼ÓËÙ
+//åˆ‡å…‰ç‰‡ç”µæœºåŠ é€Ÿ
 volatile unsigned int Step_LM=0; 
 const unsigned int Speedup[200]={62766, 62766, 62766, 62766, 62766, 62766, 62766, 62766, 62766, 62766, 62766, 62766, 62766, 62766, 62766, 62766, 62766, 62766, 62766, 62766,56978,51962,47586,43746,40357,37351,34673,32278,30125,28185,26429,24835,23384,22059,20846,19733,18709,17765,16893,16085,15335,14639,13991,13386,12821,12293,11798,11334,10898,10488,10102,9738,9394,9070,8763,8472,8197,7936,7688,7452,7228,7015,6811,6618,6433,6257,6088,5927,5773,5626,5485,5349,5220,5095,4976,4861,4751,4645,4543,4445,4351,4260,4173,4088,4007,3929,3853,3780,3709,3641,3575,3512,3450,3391,3333,3277,3223,3171,3121,3072,3024,2978,2933,2890,2848,2807,2768,2729,2692,2656,2621,2587,2554,2521,2490,2460,2430,2401,2373,2346,2320,2294,2269,2245,2221,2198,2176,2154,2133,2112,2092,2073,2054,2035,2017,2000,1983,1966,1950,1934,1919,1904,1890,1876,1862,1849,1836,1823,1811,1799,1787,1776,1765,1755,1745,1735,1725,1716,1706,1698,1689,1681,1673,1665,1658,1650,1643,1637,1630,1624,1618,1612,1607,1601,1596,1591,1587,1582,1578,1574,1570,1567,1563,1560,1557,1554,1552,1549,1547,1545,1543,1542,1540,1539,1538,1537,1536,1536,1536,1536};
-//28054,25815,23906,22260,20827,19566,18450,17454,16560,15753,15022,14355,13744,13184,12668,12190,11747,11335,10951,10593,10257,9941,9645,9365,9102,8853,8617,8393,8181,7979,7787,7603,7429,7262,7102,6950,6803,6663,6529,6400,6275,6156,6041,5930,5823,5720,5621,5525,5432,5342,5255,5171,5090,5011,4934,4860,4788,4718,4651,4585,4520,4458,4397,4338,4281,4225,4171,4117,4066,4015,3966,3918,3871,3825,3780,3737,3694,3652,3611,3572,3533,3494,3457,3420,3385,3350,3315,3282,3249,3216,3185,3154,3123,3093,3064,3035,3007,2979,2952,2925,2899,2873,2848,2823,2799,2775,2751,2728,2705,2682,2660,2639,2617,2596,2576,2555,2535,2515,2496,2477,2458,2440,2421,2403,2386,2368,2351,2334,2317,2301,2284,2268,2253,2237,2222,2206,2191,2177,2162,2148,2134,2120,2106,2092,2079,2065,2052,2039,2027,2014,2001,1989,1977,1965,1953,1941,1930,1918,1907,1896,1885,1874,1863,1852,1842,1831,1821,1811,1801,1791,1781,1771,1761,1752,1742,1733,1724,1715,1706,1697,1688,1679,1670,1662,1653,1645,1637,1628,1620,1612,1604,1596,1588,1581,1573,1565,1558,1550,1543,1536}	 ;
-//AK5351 ±äÁ¿//AK5351 ±äÁ¿
+
+//AK5351 å˜é‡//AK5351 å˜é‡
 volatile unsigned int RxLeftIdx = 0;
 volatile unsigned int RxRightIdx = 0;
 volatile u16 AK_Left_Data[DataLength*2]={0};
 volatile u16 AK_Right_Data[DataLength*2]={0};
 volatile int LastCh=-1;
 volatile int LastWord=0;
-//5ms¶¨Ê±Æ÷±äÁ¿
+//5mså®šæ—¶å™¨å˜é‡
 volatile u32 TimingDelay=0;
 volatile unsigned char V[20];
 volatile unsigned char G[20];
-//´®¿ÚÍ¨ĞÅ±äÁ¿
+//ä¸²å£é€šä¿¡å˜é‡
 volatile unsigned char SendBuffer[BufferSize]={0};
 volatile unsigned char ReadBuffer[FrameLength+30]={0};
 volatile unsigned int PHead=0,PEnd=0;
 volatile unsigned int QueryFlag=1;
 volatile unsigned int SendLength=0;
 volatile unsigned int SendCounter=0;
-//´®¿Ú1Í¨ĞÅ±äÁ¿
+//ä¸²å£1é€šä¿¡å˜é‡
 volatile unsigned char SendBuffer_uart1[BufferSize]={0};
 volatile unsigned char ReadBuffer_uart1[FrameLength+30]={0};
 volatile unsigned int PHead_uart1=0,PEnd_uart1=0;
 volatile unsigned int QueryFlag_uart1=1;
 volatile unsigned int SendLength_uart1=0;
 volatile unsigned int SendCounter_uart1=0; 
-//Æû¸×µç»ú±äÁ¿
+//æ±½ç¼¸ç”µæœºå˜é‡
 volatile u8 flagPress;
 volatile u16 PulseNum=0;
 volatile u16 PulseCount=0;
@@ -130,10 +126,10 @@ volatile u16 AddedNum=0;
 u8  flag_moto=0;
 u16	Second_1,Second_2;
 u8	m_bBusing;
-//ÑùÆ·ÔÚÎ»±äÁ¿
+//æ ·å“åœ¨ä½å˜é‡
 extern volatile u8 SamplePosition1=1,SamplePosition2=1,SamplePosition3=1,SamplePosition4=1,SamplePosition5=1,SamplePosition6=1;
 	
-//ÏµÍ³Ê±ÖÓ±äÁ¿
+//ç³»ç»Ÿæ—¶é’Ÿå˜é‡
 extern u8 SelfChecking=0;
 extern volatile u32 SelfCheckCount=0;
 volatile u8 checkChannel=0;
@@ -165,13 +161,10 @@ double dt2_st[3];
 double m_lCfC12_backup[6];
 double m_lCfC13_backup[6];
 //end
-//collin modify20141014
-//double consC12[20]= {0.501,0.803,1.101,1.402,1.688,2.010,2.298,2.605,2.903,3.197,3.502,3.803,4.105,4.395,4.706,4.997,5.278,5.609,5.911,6.213};
-//double consC13[20]= {0.54108,0.86724,1.18908,1.51416,1.82304,2.1708,2.48184,2.8134,3.13524,3.45276,3.78216,4.10724,4.4334,4.7466,5.08248,5.39676,5.70024,6.05772,6.38388,6.71004};
 
 double consC12[20]= {0.504,0.802,1.11,1.40,1.71,2.00,2.31,2.61,2.93,3.19,3.51,3.78,4.12,4.44,4.71,4.92,5.32,5.61,5.93,6.24};
 double consC13[20]={0.54432,0.86616,1.1988,1.512,1.8468,2.16,2.4948,2.8188,3.1644,3.4452,3.7908,4.0824,4.4496,4.7952,5.0868,5.3136,5.7456,6.0588,6.4044,6.7392};
-//end
+
 u16 serial;
 u16 Pressure0=0,Pressure1=0,Pressure2=0;
 u8  TripSwitchStatus=0;
@@ -202,12 +195,10 @@ double cbc12,cbc13,csc12,csc13;
 double ratebase,ratesample;
 double 	m_lCf[9]={0} ;
 u8 Go=0 ;
-//collin modify20141025
 s16 dob=0;
-//double dob = 0;
-//end
 
-s16 DOB_ZK[10],DOB_PJ;//ÖÊÁ¿¿ØÖÆ½á¹û±£´æ
+
+s16 DOB_ZK[10],DOB_PJ;//è´¨é‡æ§åˆ¶ç»“æœä¿å­˜
 
 //collin add20141014
 u16 debug_collin = 0;
@@ -243,9 +234,9 @@ void ChannelMeas(u8 Pnum)
         Intensitys[0]=Intensity1;
         Intensitys[1]=Intensity2;
 		//collin add20141105
-		  //¼ÓÈëÖ¡Í·
+		  //åŠ å…¥å¸§å¤´
         Inqueue(0x02);
-        //¼ÓÈëÃüÁî±êÖ¾
+        //åŠ å…¥å‘½ä»¤æ ‡å¿—
         Inqueue(0x01);
         Inqueue(Intensity1&0xff);
         Inqueue((Intensity1>>8)&0xff);
@@ -266,9 +257,9 @@ void ChannelMeas(u8 Pnum)
 		//end
 
 		//collin add20141105
-		  //¼ÓÈëÖ¡Í·
+		  //åŠ å…¥å¸§å¤´
         Inqueue_uart1(0x02);
-        //¼ÓÈëÃüÁî±êÖ¾
+        //åŠ å…¥å‘½ä»¤æ ‡å¿—
         Inqueue_uart1(0x01);
         Inqueue_uart1(Intensity1&0xff);
         Inqueue_uart1((Intensity1>>8)&0xff);
@@ -298,9 +289,9 @@ void ChannelMeas(u8 Pnum)
         Intensitys[2]=Intensity1;
         Intensitys[3]=Intensity2;
 		//collin add20141105
-		  //¼ÓÈëÖ¡Í·
+		  //åŠ å…¥å¸§å¤´
         Inqueue(0x02);
-        //¼ÓÈëÃüÁî±êÖ¾
+        //åŠ å…¥å‘½ä»¤æ ‡å¿—
         Inqueue(0x01);
         Inqueue(Intensity1&0xff);
         Inqueue((Intensity1>>8)&0xff);
@@ -320,9 +311,9 @@ void ChannelMeas(u8 Pnum)
 		Delay5ms(100);
 		//end
 		//collin add20141105
-		  //¼ÓÈëÖ¡Í·
+		  //åŠ å…¥å¸§å¤´
         Inqueue_uart1(0x02);
-        //¼ÓÈëÃüÁî±êÖ¾
+        //åŠ å…¥å‘½ä»¤æ ‡å¿—
         Inqueue_uart1(0x01);
         Inqueue_uart1(Intensity1&0xff);
         Inqueue_uart1((Intensity1>>8)&0xff);
@@ -347,7 +338,7 @@ void ChannelMeas(u8 Pnum)
         {
             if(m_lC12B<0.3)
             {
-                m_bMeasureBreak=2;//µ×ÆøÅ¨¶È¹ıµÍ£¬ÖĞÖ¹²âÁ¿
+                m_bMeasureBreak=2;//åº•æ°”æµ“åº¦è¿‡ä½ï¼Œä¸­æ­¢æµ‹é‡
 				m_bBusing=0;
 				flag_err[checkChannel-1]=1;
 				LED(checkChannel,1);
@@ -367,9 +358,9 @@ void ChannelMeas(u8 Pnum)
         Intensitys[4]=Intensity1;
         Intensitys[5]=Intensity2;
 		//collin add20141105
-		  //¼ÓÈëÖ¡Í·
+		  //åŠ å…¥å¸§å¤´
         Inqueue(0x02);
-        //¼ÓÈëÃüÁî±êÖ¾
+        //åŠ å…¥å‘½ä»¤æ ‡å¿—
         Inqueue(0x01);
         Inqueue(Intensity1&0xff);
         Inqueue((Intensity1>>8)&0xff);
@@ -389,9 +380,9 @@ void ChannelMeas(u8 Pnum)
 		Delay5ms(100);
 		//end
 		//collin add20141105
-		  //¼ÓÈëÖ¡Í·
+		  //åŠ å…¥å¸§å¤´
         Inqueue_uart1(0x02);
-        //¼ÓÈëÃüÁî±êÖ¾
+        //åŠ å…¥å‘½ä»¤æ ‡å¿—
         Inqueue_uart1(0x01);
         Inqueue_uart1(Intensity1&0xff);
         Inqueue_uart1((Intensity1>>8)&0xff);
@@ -421,9 +412,9 @@ void ChannelMeas(u8 Pnum)
         Intensitys[6]=Intensity1;
         Intensitys[7]=Intensity2;
 		//collin add20141105
-		  //¼ÓÈëÖ¡Í·
+		  //åŠ å…¥å¸§å¤´
         Inqueue(0x02);
-        //¼ÓÈëÃüÁî±êÖ¾
+        //åŠ å…¥å‘½ä»¤æ ‡å¿—
         Inqueue(0x01);
         Inqueue(Intensity1&0xff);
         Inqueue((Intensity1>>8)&0xff);
@@ -444,9 +435,9 @@ void ChannelMeas(u8 Pnum)
 		//end
 
 		//collin add20141105
-		  //¼ÓÈëÖ¡Í·
+		  //åŠ å…¥å¸§å¤´
         Inqueue_uart1(0x02);
-        //¼ÓÈëÃüÁî±êÖ¾
+        //åŠ å…¥å‘½ä»¤æ ‡å¿—
         Inqueue_uart1(0x01);
         Inqueue_uart1(Intensity1&0xff);
         Inqueue_uart1((Intensity1>>8)&0xff);
@@ -472,7 +463,7 @@ void ChannelMeas(u8 Pnum)
         {
             if(m_lC12S<0.3)
             {
-                m_bMeasureBreak=3;//ÑùÆøÅ¨¶È¹ıµÍ£¬ÖĞÖ¹²âÁ¿
+                m_bMeasureBreak=3;//æ ·æ°”æµ“åº¦è¿‡ä½ï¼Œä¸­æ­¢æµ‹é‡
 				m_bBusing=0;
 				flag_err[checkChannel-1]=1;
 				LED(checkChannel,1);
@@ -535,9 +526,9 @@ void ChannelMeas(u8 Pnum)
         Intensitys[8]=Intensity1;
         Intensitys[9]=Intensity2;
 		//collin add20141105
-		  //¼ÓÈëÖ¡Í·
+		  //åŠ å…¥å¸§å¤´
         Inqueue(0x02);
-        //¼ÓÈëÃüÁî±êÖ¾
+        //åŠ å…¥å‘½ä»¤æ ‡å¿—
         Inqueue(0x01);
         Inqueue(Intensity1&0xff);
         Inqueue((Intensity1>>8)&0xff);
@@ -558,9 +549,9 @@ void ChannelMeas(u8 Pnum)
 		//end
 
 		//collin add20141105
-		  //¼ÓÈëÖ¡Í·
+		  //åŠ å…¥å¸§å¤´
         Inqueue_uart1(0x02);
-        //¼ÓÈëÃüÁî±êÖ¾
+        //åŠ å…¥å‘½ä»¤æ ‡å¿—
         Inqueue_uart1(0x01);
         Inqueue_uart1(Intensity1&0xff);
         Inqueue_uart1((Intensity1>>8)&0xff);
@@ -639,9 +630,9 @@ void ChannelMeas(u8 Pnum)
         Intensitys[10]=Intensity1;
         Intensitys[11]=Intensity2;
 		//collin add20141105
-		  //¼ÓÈëÖ¡Í·
+		  //åŠ å…¥å¸§å¤´
         Inqueue(0x02);
-        //¼ÓÈëÃüÁî±êÖ¾
+        //åŠ å…¥å‘½ä»¤æ ‡å¿—
         Inqueue(0x01);
         Inqueue(Intensity1&0xff);
         Inqueue((Intensity1>>8)&0xff);
@@ -662,9 +653,9 @@ void ChannelMeas(u8 Pnum)
 		//end
 
 		//collin add20141105
-		  //¼ÓÈëÖ¡Í·
+		  //åŠ å…¥å¸§å¤´
         Inqueue_uart1(0x02);
-        //¼ÓÈëÃüÁî±êÖ¾
+        //åŠ å…¥å‘½ä»¤æ ‡å¿—
         Inqueue_uart1(0x01);
         Inqueue_uart1(Intensity1&0xff);
         Inqueue_uart1((Intensity1>>8)&0xff);
@@ -696,9 +687,9 @@ void ChannelMeas(u8 Pnum)
         Intensitys[12]=Intensity1;
         Intensitys[13]=Intensity2;
 		//collin add20141105
-		  //¼ÓÈëÖ¡Í·
+		  //åŠ å…¥å¸§å¤´
         Inqueue(0x02);
-        //¼ÓÈëÃüÁî±êÖ¾
+        //åŠ å…¥å‘½ä»¤æ ‡å¿—
         Inqueue(0x01);
         Inqueue(Intensity1&0xff);
         Inqueue((Intensity1>>8)&0xff);
@@ -719,9 +710,9 @@ void ChannelMeas(u8 Pnum)
 		//end
 
 		//collin add20141105
-		  //¼ÓÈëÖ¡Í·
+		  //åŠ å…¥å¸§å¤´
         Inqueue_uart1(0x02);
-        //¼ÓÈëÃüÁî±êÖ¾
+        //åŠ å…¥å‘½ä»¤æ ‡å¿—
         Inqueue_uart1(0x01);
         Inqueue_uart1(Intensity1&0xff);
         Inqueue_uart1((Intensity1>>8)&0xff);
@@ -756,9 +747,9 @@ void ChannelMeas(u8 Pnum)
         Intensitys[14]=Intensity1;
         Intensitys[15]=Intensity2;
 		//collin add20141105
-		  //¼ÓÈëÖ¡Í·
+		  //åŠ å…¥å¸§å¤´
         Inqueue(0x02);
-        //¼ÓÈëÃüÁî±êÖ¾
+        //åŠ å…¥å‘½ä»¤æ ‡å¿—
         Inqueue(0x01);
         Inqueue(Intensity1&0xff);
         Inqueue((Intensity1>>8)&0xff);
@@ -779,9 +770,9 @@ void ChannelMeas(u8 Pnum)
 		//end
 
 		//collin add20141105
-		  //¼ÓÈëÖ¡Í·
+		  //åŠ å…¥å¸§å¤´
         Inqueue_uart1(0x02);
-        //¼ÓÈëÃüÁî±êÖ¾
+        //åŠ å…¥å‘½ä»¤æ ‡å¿—
         Inqueue_uart1(0x01);
         Inqueue_uart1(Intensity1&0xff);
         Inqueue_uart1((Intensity1>>8)&0xff);
@@ -814,9 +805,9 @@ void ChannelMeas(u8 Pnum)
         Intensitys[16]=Intensity1;
         Intensitys[17]=Intensity2;
 		//collin add20141105
-		  //¼ÓÈëÖ¡Í·
+		  //åŠ å…¥å¸§å¤´
         Inqueue(0x02);
-        //¼ÓÈëÃüÁî±êÖ¾
+        //åŠ å…¥å‘½ä»¤æ ‡å¿—
         Inqueue(0x01);
         Inqueue(Intensity1&0xff);
         Inqueue((Intensity1>>8)&0xff);
@@ -837,9 +828,9 @@ void ChannelMeas(u8 Pnum)
 		//end
 
 		//collin add20141105
-		  //¼ÓÈëÖ¡Í·
+		  //åŠ å…¥å¸§å¤´
         Inqueue_uart1(0x02);
-        //¼ÓÈëÃüÁî±êÖ¾
+        //åŠ å…¥å‘½ä»¤æ ‡å¿—
         Inqueue_uart1(0x01);
         Inqueue_uart1(Intensity1&0xff);
         Inqueue_uart1((Intensity1>>8)&0xff);
@@ -888,7 +879,7 @@ void ChannelMeas(u8 Pnum)
 				SendData();
 				Delay5ms(10);
 			} 
-            //1.Îü¹â¶È
+            //1.å¸å…‰åº¦
 
 			//collin modify20141024
 			
@@ -914,7 +905,7 @@ void ChannelMeas(u8 Pnum)
                 //absC13[(serial<<2)+1]= xsc13;
 				serial++ ;
                 Inqueue(0x02);
-                //¼ÓÈëÃüÁî±êÖ¾
+                //åŠ å…¥å‘½ä»¤æ ‡å¿—
                 Inqueue(0xFF);
                 Inqueue(0x00);
                 Inqueue(0x46);
@@ -925,7 +916,7 @@ void ChannelMeas(u8 Pnum)
                 Delay5ms(50);
 
 				Inqueue_uart1(0x02);
-                //¼ÓÈëÃüÁî±êÖ¾
+                //åŠ å…¥å‘½ä»¤æ ‡å¿—
                 Inqueue_uart1(0xFF);
                 Inqueue_uart1(0x00);
                 Inqueue_uart1(0x46);
@@ -939,10 +930,10 @@ void ChannelMeas(u8 Pnum)
                 {
 					double dt1[3];
 					double dt2[3];
-                    //hpir(Îü¹â¶È£¬Å¨¶È£¬ÑùÆ·ÊıÁ¿£¬Êä³öÏµÊı£¬´ÎÊı£©
+                    //hpir(å¸å…‰åº¦ï¼Œæµ“åº¦ï¼Œæ ·å“æ•°é‡ï¼Œè¾“å‡ºç³»æ•°ï¼Œæ¬¡æ•°ï¼‰
                     hpir(absC12,consC12, 20, m_lCfC12, 5,dt1);
                     hpir(absC13,consC13, 20, m_lCfC13, 5,dt2);
-					//±£´æÎü¹â¶Èµ½Flash
+					//ä¿å­˜å¸å…‰åº¦åˆ°Flash
 					for(i=0;i<20;i++)
 					{
 						for (j=0; j<8; j++)  
@@ -960,7 +951,7 @@ void ChannelMeas(u8 Pnum)
 					SPI_FLASH_SectorErase(0x7D0000);
 					SPI_FLASH_BufferWrite(Abs_backup,0x7D0000,320); 
 					//end
-					//Ğ´Èë²ÎÊıĞòÁĞ
+					//å†™å…¥å‚æ•°åºåˆ—
 					for(i=0;i<6;i++)
 					{
 						for (j=0; j<8; j++)  
@@ -976,11 +967,11 @@ void ChannelMeas(u8 Pnum)
 						}
 					} 
 					m_bBusing=1; 
-					//Ğ´Èë´æ´¢Æ÷
+					//å†™å…¥å­˜å‚¨å™¨
 					I2C_EE_BufferWrite(Cf, 0,128);
 					m_bBusing=0; 
 					Inqueue(0x02);
-	                //¼ÓÈëÃüÁî±êÖ¾
+	                //åŠ å…¥å‘½ä»¤æ ‡å¿—
 	                Inqueue(0xFF);
 	                Inqueue(0x00);
 	                Inqueue(0x47);
@@ -998,7 +989,7 @@ void ChannelMeas(u8 Pnum)
 	                Delay5ms(200);
 
 					Inqueue_uart1(0x02);
-	                //¼ÓÈëÃüÁî±êÖ¾
+	                //åŠ å…¥å‘½ä»¤æ ‡å¿—
 	                Inqueue_uart1(0xFF);
 	                Inqueue_uart1(0x00);
 	                Inqueue_uart1(0x47);
@@ -1017,7 +1008,7 @@ void ChannelMeas(u8 Pnum)
 					
 					for(i=4;i<16;i++)  
 					{
-						//·¢ËÍ±ê×¼ÇúÏß
+						//å‘é€æ ‡å‡†æ›²çº¿
 						Inqueue(0x02);
 						Inqueue(0xFF);
 						Inqueue(0x00);
@@ -1047,7 +1038,7 @@ void ChannelMeas(u8 Pnum)
 					{
 
 						//collin add20141011
-						//ÖÆ×÷±ê×¼ÇúÏßÍê³ÉÖØÆôÃüÁî×Ö
+						//åˆ¶ä½œæ ‡å‡†æ›²çº¿å®Œæˆé‡å¯å‘½ä»¤å­—
 						if (funtion_complete_reboot_flag != 5)
 						{
 						Inqueue(0x02);
@@ -1076,12 +1067,12 @@ void ChannelMeas(u8 Pnum)
             }
             else
             {
-                //2.Å¨¶È				
+                //2.æµ“åº¦				
                 cbc12 = ((((m_lCfC12[5] * xbc12 + m_lCfC12[4]) * xbc12 + m_lCfC12[3]) * xbc12 + m_lCfC12[2]) * xbc12 + m_lCfC12[1]) * xbc12 + m_lCfC12[0];
                 csc12 = ((((m_lCfC12[5] * xsc12 + m_lCfC12[4]) * xsc12 + m_lCfC12[3]) * xsc12 + m_lCfC12[2]) * xsc12 + m_lCfC12[1]) * xsc12 + m_lCfC12[0];
                 cbc13 = ((((m_lCfC13[5] * xbc13 + m_lCfC13[4]) * xbc13 + m_lCfC13[3]) * xbc13 + m_lCfC13[2]) * xbc13 + m_lCfC13[1]) * xbc13 + m_lCfC13[0];
                 csc13 = ((((m_lCfC13[5] * xsc13 + m_lCfC13[4]) * xsc13 + m_lCfC13[3]) * xsc13 + m_lCfC13[2]) * xsc13 + m_lCfC13[1]) * xsc13 + m_lCfC13[0];
-				//¸ù¾İÅ¨¶È¶¨Î»5¸öµã£¬×ö±ê×¼ÇúÏß
+				//æ ¹æ®æµ“åº¦å®šä½5ä¸ªç‚¹ï¼Œåšæ ‡å‡†æ›²çº¿
 				//collin mask20141222
 				/*			
 
@@ -1108,7 +1099,7 @@ void ChannelMeas(u8 Pnum)
 				*/
 				//end
 				
-				//3.Å¨¶È±È
+				//3.æµ“åº¦æ¯”
 				//collin modify20141013
 				/*
                 ratebase	= cbc13*100.0/cbc12*10.0;	 //107.7-->1.077
@@ -1127,7 +1118,7 @@ void ChannelMeas(u8 Pnum)
 				//end
 							//collin add 20141124
 							
-			//c13µ×ÆøºÍÑùÆø¹âÇ¿ÖµµÄ²î
+			//c13åº•æ°”å’Œæ ·æ°”å…‰å¼ºå€¼çš„å·®
 			 
 			//xbc12=-log10((float)(Intensitys[10]<<1) / ((float)Intensitys[8]+(float)Intensitys[12]));
 			//I13bs= Intensitys[11]*(1/pow(10,1.12372*xbc12*0.05)-1)/1000.0;
@@ -1209,7 +1200,7 @@ void ChannelMeas(u8 Pnum)
 							DOB_PJ=(DOB_PJ/10);	
 						}
 						//collin add20141017
-					//Ê®×é²âÁ¿Öµ·¢ËÍ
+					//åç»„æµ‹é‡å€¼å‘é€
 					 Inqueue(0x02);
                 	Inqueue(0xFF);
                 	Inqueue(0xf9);
@@ -1237,7 +1228,7 @@ void ChannelMeas(u8 Pnum)
                 	Delay5ms(10);
 						//end
 
-						//Ê®×é²âÁ¿Öµ·¢ËÍ
+						//åç»„æµ‹é‡å€¼å‘é€
 					 Inqueue_uart1(0x02);
                 	Inqueue_uart1(0xFF);
                 	Inqueue_uart1(0xf9);
@@ -1342,9 +1333,9 @@ void ChannelMeas(u8 Pnum)
 					//end
 				}
                 QueryFlag	= 1;
-                //¼ÓÈëÖ¡Í·
+                //åŠ å…¥å¸§å¤´
                 Inqueue(0x02);
-                //¼ÓÈëÃüÁî±êÖ¾
+                //åŠ å…¥å‘½ä»¤æ ‡å¿—
                 Inqueue(0x01);
                 Inqueue(0x00);
                 Inqueue(0x40);
@@ -1378,9 +1369,9 @@ void ChannelMeas(u8 Pnum)
                 Delay5ms(400);
 
 				QueryFlag_uart1	= 1;
-                //¼ÓÈëÖ¡Í·
+                //åŠ å…¥å¸§å¤´
                 Inqueue_uart1(0x02);
-                //¼ÓÈëÃüÁî±êÖ¾
+                //åŠ å…¥å‘½ä»¤æ ‡å¿—
                 Inqueue_uart1(0x01);
                 Inqueue_uart1(0x00);
                 Inqueue_uart1(0x40);
@@ -1446,7 +1437,7 @@ void LeakageCheck(u8 Go)
  {
 	
 	Inqueue(0x02);
-		//¼ÓÈëÃüÁî±êÖ¾
+		//åŠ å…¥å‘½ä»¤æ ‡å¿—
 	Inqueue(0xFF);
 	Inqueue(0x00);
 	Inqueue(0x45);
@@ -1456,7 +1447,7 @@ void LeakageCheck(u8 Go)
 	Inqueue(0x03);
 
 	Inqueue_uart1(0x02);
-		//¼ÓÈëÃüÁî±êÖ¾
+		//åŠ å…¥å‘½ä»¤æ ‡å¿—
 	Inqueue_uart1(0xFF);
 	Inqueue_uart1(0x00);
 	Inqueue_uart1(0x45);
@@ -1465,7 +1456,7 @@ void LeakageCheck(u8 Go)
 		Inqueue_uart1(0);
 	Inqueue_uart1(0x03);
 
-/* 	Motorun(0,T,FORWARD,0,      3,7,8,20,  3,6,20,0,     91,151,160);      //³éÆø
+/* 	Motorun(0,T,FORWARD,0,      3,7,8,20,  3,6,20,0,     91,151,160);      //æŠ½æ°”
 
 	Delay5ms(300);	
 	Motorun(0,T-m,BACKWARD,0,   3,3,0,0,  3,0,0,0,      90,151,161);
@@ -1474,7 +1465,7 @@ void LeakageCheck(u8 Go)
 	Valve(150);	 */
  	for(i=0;i<10;i++)
 	{
-		Delay5ms(200);         //ÑÓÊ±
+		Delay5ms(200);         //å»¶æ—¶
 		Press[i] =ADC_Press(ADC_FS);
 		Y=(u16)(((((float)(Press[i] + 28) * 3 / 4096) - 1) / 4)*1000);
 		//debug_collin = Y;	
@@ -1519,7 +1510,7 @@ void LeakageCheck(u8 Go)
 	}
 	Delay5ms(10);
    	Inqueue(0x02);
-	//¼ÓÈëÃüÁî±êÖ¾
+	//åŠ å…¥å‘½ä»¤æ ‡å¿—
 	Inqueue(0xFF);
 	Inqueue(0x00);
 	Inqueue(0x45);
@@ -1539,7 +1530,7 @@ void LeakageCheck(u8 Go)
 		Inqueue(0);
 	Inqueue(0x03);
 //	Valve(151);
-//	Valve(160);//ÅÅÆø  
+//	Valve(160);//æ’æ°”  
 	Delay5ms(100);
 
 	Inqueue_uart1(0x02);
@@ -1563,14 +1554,14 @@ void LeakageCheck(u8 Go)
 }
   u16 n	= 0;
 /*-----------------------------------
-ÊÔ´òÆøÌåÈ·¶¨Âö³åÊı£¨Ó¦ÔÚ¿ª»ú×Ô¼ì¹ı³ÌÖ´ĞĞ,²âÁ¿4~6´Î£¿£©
-ADC»ù×¼µçÑ¹3.0V£»
-Ñ¹Á¦±íÊä³öµçÑ¹Óë±íÏÔÑ¹Á¦Âú×ã¹ØÏµÊ½ y=4x+1£»
-ADÖµÓëÑ¹Á¦µÄ¹ØÏµ AD=£¨4x+1£©*4096/3.0£»
-´òµ½Ä¿±êÑ¹Á¦£¨0.4Mpa£©µÄÂö³åÊın=£¨Ä¿±êÑ¹Á¦/ÊÔ²âÑ¹Á¦£©*ÊÔ²âÂö³å£»
-¿ÉµÃn=8738133/(AD-1365);
-ÆäÖĞADÎªÊÔ²âÊ±¶ÁÈ¡µÄADÖµ£»
-1365¼´Îª±ê×¼´óÆøÑ¹Ê±µÄADÖµ£¨pressure0£©£¬¿É¶à´Î²âÁ¿È¡Æ½¾ù£»
+è¯•æ‰“æ°”ä½“ç¡®å®šè„‰å†²æ•°ï¼ˆåº”åœ¨å¼€æœºè‡ªæ£€è¿‡ç¨‹æ‰§è¡Œ,æµ‹é‡4~6æ¬¡ï¼Ÿï¼‰
+ADCåŸºå‡†ç”µå‹3.0Vï¼›
+å‹åŠ›è¡¨è¾“å‡ºç”µå‹ä¸è¡¨æ˜¾å‹åŠ›æ»¡è¶³å…³ç³»å¼ y=4x+1ï¼›
+ADå€¼ä¸å‹åŠ›çš„å…³ç³» AD=ï¼ˆ4x+1ï¼‰*4096/3.0ï¼›
+æ‰“åˆ°ç›®æ ‡å‹åŠ›ï¼ˆ0.4Mpaï¼‰çš„è„‰å†²æ•°n=ï¼ˆç›®æ ‡å‹åŠ›/è¯•æµ‹å‹åŠ›ï¼‰*è¯•æµ‹è„‰å†²ï¼›
+å¯å¾—n=8738133/(AD-1365);
+å…¶ä¸­ADä¸ºè¯•æµ‹æ—¶è¯»å–çš„ADå€¼ï¼›
+1365å³ä¸ºæ ‡å‡†å¤§æ°”å‹æ—¶çš„ADå€¼ï¼ˆpressure0ï¼‰ï¼Œå¯å¤šæ¬¡æµ‹é‡å–å¹³å‡ï¼›
 -------------------------------------*/
 s16 Test(void)
 { 
@@ -1579,7 +1570,7 @@ s16 Test(void)
 	n	= 0;
 	m_lCf[6]=2190;
 	Go=0;
-	//±¨¸æ¹¤×÷×´Ì¬
+	//æŠ¥å‘Šå·¥ä½œçŠ¶æ€
 	QueryFlag	= 1;
 	Inqueue(0x02);
 	Inqueue(0xFF);
@@ -1592,7 +1583,7 @@ s16 Test(void)
 	Valve(160);
 	Delay5ms(40);
 
-	//±¨¸æ¹¤×÷×´Ì¬
+	//æŠ¥å‘Šå·¥ä½œçŠ¶æ€
 	QueryFlag_uart1	= 1;
 	Inqueue_uart1(0x02);
 	Inqueue_uart1(0xFF);
@@ -1610,16 +1601,16 @@ s16 Test(void)
    	T= m_lCf[7];
 	while(Go<=3)
 	{
-		//·ÅÆø
+		//æ”¾æ°”
 		Valve(151);
-		Valve(160);//ÅÅÆø
+		Valve(160);//æ’æ°”
 		Valve(170);
 		//collin add20141114
 		//Valve(80);
 		//end
 		Valve(180);
 		Delay5ms(200);
-		Pressure0=ADC_Press(ADC_FS);				//¶ÁÈ¡Ñ¹Á¦±í³õÊ¼ADÖµ
+		Pressure0=ADC_Press(ADC_FS);				//è¯»å–å‹åŠ›è¡¨åˆå§‹ADå€¼
 		Motorun(0,2000,FORWARD,0,     30,60,5,20,     30,6,20,0,        91,150,160);
 		Delay5ms(10);
 		//collin recover20141022
@@ -1627,7 +1618,7 @@ s16 Test(void)
 		//Motorun(1,2000,BACKWARD,0,    30,60,5,20,     30,6,20,200,      90,151,160);
 		//end
 		Delay5ms(20);
-		//´Ó·§ÃÅ11ÎüÆø
+		//ä»é˜€é—¨11å¸æ°”
 		Motorun(0,2000,FORWARD,0,     30,60,5,20,     30,6,20,0,        91,150,160);
 		Delay5ms(10);
 		//collin recover20141022
@@ -1639,10 +1630,10 @@ s16 Test(void)
 		Delay5ms(300);
 		Motorun(1,T,BACKWARD,0,    20,30,1,20,     20,4,50,200,      90,151,161);
 	//	Delay5ms(400);
-		//¹Ø±Õ·§ÃÅ9±£³ÖÑùÆ·³ØÆøÑ¹
+		//å…³é—­é˜€é—¨9ä¿æŒæ ·å“æ± æ°”å‹
 		Valve(150);
 		LeakageCheck(Go);
-		Pressure1=ADC_Press(ADC_FS);         //¶ÁÈ¡Ñ¹Á¦±íÊÔ²âADÖµ
+		Pressure1=ADC_Press(ADC_FS);         //è¯»å–å‹åŠ›è¡¨è¯•æµ‹ADå€¼
 		Pressure1=Pressure1-Pressure0;
 		if(m_lCf[8]==400)
 		{
@@ -1673,11 +1664,11 @@ s16 Test(void)
 			}
 		}
 		
-		n=(unsigned int)(m_lCf[6]*T/Pressure1);   // Ğè¸ù¾İÊµÑé½á¹ûĞ£Õı	1084 3800   1110 0000
+		n=(unsigned int)(m_lCf[6]*T/Pressure1);   // éœ€æ ¹æ®å®éªŒç»“æœæ ¡æ­£	1084 3800   1110 0000
 		Valve(151);
 		Valve(160);
 		Delay5ms(200);
- 		Motorun(0,T,FORWARD,0,      30,60,8,20,  30,6,20,0,     91,151,160);      //³éÆø
+ 		Motorun(0,T,FORWARD,0,      30,60,8,20,  30,6,20,0,     91,151,160);      //æŠ½æ°”
 		Delay5ms(300);
 		//collin recover20141015	
 		Motorun(0,T-n,BACKWARD,0,   30,30,0,0,  30,0,0,0,      90,151,160);
@@ -1695,17 +1686,17 @@ s16 Test(void)
 		  else 
 		  {  Go++; }
 	}
-	m=T-n;  //¿Û³ım¸öÂö³åºó·´ÍÆ¼´¿ÉµÃµ½0.4MPaÆøÑ¹
-	//·ÅÆø
+	m=T-n;  //æ‰£é™¤mä¸ªè„‰å†²ååæ¨å³å¯å¾—åˆ°0.4MPaæ°”å‹
+	//æ”¾æ°”
 	Valve(151);
-	Valve(160);//ÅÅÆø
+	Valve(160);//æ’æ°”
 	Valve(170);
 	Valve(180);
 	Delay5ms(200);
-	//È«²¿¹Ø±Õ
+	//å…¨éƒ¨å…³é—­
 	Valve(150);
 	Delay5ms(20);
-	//±¨¸æ¹¤×÷×´Ì¬
+	//æŠ¥å‘Šå·¥ä½œçŠ¶æ€
 	QueryFlag	= 1;
 	Inqueue(0x02);
 	Inqueue(0xFF);
@@ -1752,19 +1743,19 @@ s16 Test(void)
 	return m;
 }
 /*-----------------------------------
-³õ²½²Î±ÈÆøÌå²âÁ¿×Ó³ÌĞò
- 3´Î²Î±ÈÆøÏ´Æø¹ı³Ì	 4~8r/s	 Âö³åÊı£º3250
- 1´Î²âÁ¿¹ı³Ì
+åˆæ­¥å‚æ¯”æ°”ä½“æµ‹é‡å­ç¨‹åº
+ 3æ¬¡å‚æ¯”æ°”æ´—æ°”è¿‡ç¨‹	 4~8r/s	 è„‰å†²æ•°ï¼š3250
+ 1æ¬¡æµ‹é‡è¿‡ç¨‹
 -------------------------------------*/
 void  AirFirst(void)
 	{
 	Valve(171);
 	Valve(181);	   //1270-->1500
-	Motorun(0,1500,FORWARD,0,  30,60,8,20,  30,2,20,0,     81,150,160);      //³éÆø
-	Motorun(0,1500,BACKWARD,0, 30,60,8,20,  30,2,20,200,  80,151,170);      //´òÆø,ÇåÏ´
+	Motorun(0,1500,FORWARD,0,  30,60,8,20,  30,2,20,0,     81,150,160);      //æŠ½æ°”
+	Motorun(0,1500,BACKWARD,0, 30,60,8,20,  30,2,20,200,  80,151,170);      //æ‰“æ°”,æ¸…æ´—
 	Delay1ms(4);
 	Valve(150);	 //2540-->3000
-	Motorun(0,3000,FORWARD,0,      30,60,8,20,  30,2,20,0,     81,0,171);      //³éÆø
+	Motorun(0,3000,FORWARD,0,      30,60,8,20,  30,2,20,0,     81,0,171);      //æŠ½æ°”
 	Delay1ms(444);
 	Valve(80);	
 	Valve(151);
@@ -1778,9 +1769,9 @@ void  AirFirst(void)
 
 //collin add20141031
 /*-----------------------------------
-³õ²½²Î±ÈÆøÌå²âÁ¿×Ó³ÌĞò
- 3´Î²Î±ÈÆøÏ´Æø¹ı³Ì	 4~8r/s	 Âö³åÊı£º3250
- 1´Î²âÁ¿¹ı³Ì
+åˆæ­¥å‚æ¯”æ°”ä½“æµ‹é‡å­ç¨‹åº
+ 3æ¬¡å‚æ¯”æ°”æ´—æ°”è¿‡ç¨‹	 4~8r/s	 è„‰å†²æ•°ï¼š3250
+ 1æ¬¡æµ‹é‡è¿‡ç¨‹
 -------------------------------------*/
 void  AirSecond(void)
 {
@@ -1790,12 +1781,12 @@ void  AirSecond(void)
 	Valve(181);
 	for(i=0;i<4;i++)
 	{
-		Motorun(0,1250,FORWARD,0,  30,60,8,20,  30,2,20,0,     81,150,160);      //³éÆø
+		Motorun(0,1250,FORWARD,0,  30,60,8,20,  30,2,20,0,     81,150,160);      //æŠ½æ°”
 		Delay5ms(10);
-		Motorun(0,1250,BACKWARD,0, 30,60,8,20,  30,2,20,1200,  80,151,160);      //´òÆø,ÇåÏ´
+		Motorun(0,1250,BACKWARD,0, 30,60,8,20,  30,2,20,1200,  80,151,160);      //æ‰“æ°”,æ¸…æ´—
 	}
 	Delay5ms(10);
-	Motorun(0,3000,FORWARD,0,      30,60,8,20,  30,2,20,0,     81,150,160);      //³éÆø
+	Motorun(0,3000,FORWARD,0,      30,60,8,20,  30,2,20,0,     81,150,160);      //æŠ½æ°”
 	Delay5ms(100);
 	Valve(170);
 	Valve(180);
@@ -1823,56 +1814,56 @@ void  	Cartridge(u8 wash)
 
     for(i=0; i<2; i++)
     {
-        Motorun(1,3250,FORWARD,0,      30,60,8,20,      20,6,20,0, 	 OpenValve, 150, 160);   //³éÆø 4~8r/s	Âö³åÊı:1500
-        Motorun(1,3250,BACKWARD,0,     30,60,8,20,      20,6,20,200,	 CloseValve, 151, 160);  //´òÆø£¬µ×ÆøÇåÏ´
+        Motorun(1,3250,FORWARD,0,      30,60,8,20,      20,6,20,0, 	 OpenValve, 150, 160);   //æŠ½æ°” 4~8r/s	è„‰å†²æ•°:1500
+        Motorun(1,3250,BACKWARD,0,     30,60,8,20,      20,6,20,200,	 CloseValve, 151, 160);  //æ‰“æ°”ï¼Œåº•æ°”æ¸…æ´—
     }
-    Motorun(1,T,FORWARD,0,      30,50,8,20,      20,6,20,0, 	 OpenValve, 150, 160);   //³éÆø£¬ÂúĞĞ³Ì
+    Motorun(1,T,FORWARD,0,      30,50,8,20,      20,6,20,0, 	 OpenValve, 150, 160);   //æŠ½æ°”ï¼Œæ»¡è¡Œç¨‹
     Delay5ms(300);
     Valve(170);
     Valve(180);
-    Motorun(1, m,  BACKWARD,0,   30,30,0,0,      30,0,0,0,	CloseValve, 151, 160);  //·´ÍÆm¸öÂö³å  ,ËÙ¶È4~5r/s
+    Motorun(1, m,  BACKWARD,0,   30,30,0,0,      30,0,0,0,	CloseValve, 151, 160);  //åæ¨mä¸ªè„‰å†²  ,é€Ÿåº¦4~5r/s
     Delay5ms(200);
-    Motorun(1,T-m,BACKWARD,0,   20,30,1,20, 20,5,50,200,	 0, 0, 161);  //´òÆøÖÁµ×
+    Motorun(1,T-m,BACKWARD,0,   20,30,1,20, 20,5,50,200,	 0, 0, 161);  //æ‰“æ°”è‡³åº•
     Valve(150);
-    Delay5ms(1000);         //¹²ÑÓÊ±5sµÈÆøÑ¹ÎÈ¶¨
-    //×ª»»·¢ËÍÊı¾İ
+    Delay5ms(1000);         //å…±å»¶æ—¶5sç­‰æ°”å‹ç¨³å®š
+    //è½¬æ¢å‘é€æ•°æ®
     AK_Conv();
     Valve(151);
-    Valve(160);//ÅÅÆø
+    Valve(160);//æ’æ°”
     Delay5ms(100);
     Valve(150);
 }
 /*-----------------------------------
-²Î±ÈÆøÌå²âÁ¿×Ó³ÌĞò
- 3´Î²Î±ÈÆøÏ´Æø¹ı³Ì	 4~8r/s	 Âö³åÊı£º3250
- 1´Î²âÁ¿¹ı³Ì
+å‚æ¯”æ°”ä½“æµ‹é‡å­ç¨‹åº
+ 3æ¬¡å‚æ¯”æ°”æ´—æ°”è¿‡ç¨‹	 4~8r/s	 è„‰å†²æ•°ï¼š3250
+ 1æ¬¡æµ‹é‡è¿‡ç¨‹
 -------------------------------------*/
 void  Air(void)
 {
 	u8 i; 
 	Valve(171);
 	Valve(181);		//3180-->3500
-	Motorun(0,3500,FORWARD,0,  30,65,8,20, 30,5,20,0,    81,150,160);      //³éÆø
-	Motorun(0,3500,BACKWARD,0, 30,65,8,20, 30,5,20,200,  80,151,170);      //´òÆø,ÇåÏ´
+	Motorun(0,3500,FORWARD,0,  30,65,8,20, 30,5,20,0,    81,150,160);      //æŠ½æ°”
+	Motorun(0,3500,BACKWARD,0, 30,65,8,20, 30,5,20,200,  80,151,170);      //æ‰“æ°”,æ¸…æ´—
 	for(i=0;i<2;i++)
 	{
-		Motorun(0,3500,FORWARD,0,  30,65,8,20, 30,5,20,0,    81,150,171);      //³éÆø
-		Motorun(0,3500,BACKWARD,0, 30,65,8,20, 30,5,20,200,  80,151,170);      //´òÆø,ÇåÏ´
+		Motorun(0,3500,FORWARD,0,  30,65,8,20, 30,5,20,0,    81,150,171);      //æŠ½æ°”
+		Motorun(0,3500,BACKWARD,0, 30,65,8,20, 30,5,20,200,  80,151,170);      //æ‰“æ°”,æ¸…æ´—
 		Delay1ms(4);
 	}
 
-	Motorun(0,3500,FORWARD,0,      30,65,8,20,  30,5,20,0,   81,150,171);      //³éÆø
+	Motorun(0,3500,FORWARD,0,      30,65,8,20,  30,5,20,0,   81,150,171);      //æŠ½æ°”
 	Delay1ms(514);
 	Valve(170);
 	Valve(180);
-	Motorun(0,3500,BACKWARD,1,     27,27,0,1,  30,0,20,200, 80,151,170);      //´òÆø£¬ÂıÍÆ1~3r/s£¬¹ı³ÌÖĞ²â²Î±ÈÆøÌåÎü¹â¶È
+	Motorun(0,3500,BACKWARD,1,     27,27,0,1,  30,0,20,200, 80,151,170);      //æ‰“æ°”ï¼Œæ…¢æ¨1~3r/sï¼Œè¿‡ç¨‹ä¸­æµ‹å‚æ¯”æ°”ä½“å¸å…‰åº¦
 	Delay1ms(200);	
 	Valve(150);
 	Delay1ms(23);
 }
 
 /*-----------------------------
-³õ²½ÑùÆø²âÁ¿³ÌĞò
+åˆæ­¥æ ·æ°”æµ‹é‡ç¨‹åº
 -----------------------------------*/
 void	SampleFirst(u8 Pnum,u16 m)
 {
@@ -1903,19 +1894,19 @@ void	SampleFirst(u8 Pnum,u16 m)
 
 	Valve(171);	
 	Valve(181);		  //1570-->1800
-	Motorun(0,1800,FORWARD,0,      30,60,8,20,      30,6,20,0, 	 OpenValve, 150, 160);   //³éÆø 4~8r/s	Âö³åÊı:1500
+	Motorun(0,1800,FORWARD,0,      30,60,8,20,      30,6,20,0, 	 OpenValve, 150, 160);   //æŠ½æ°” 4~8r/s	è„‰å†²æ•°:1500
 	Valve(CloseValve); Valve(170);	
 	Delay1ms(22);
 	Valve(151);
 	Delay1ms(2);
-	Motorun(0,1800,BACKWARD,0,     30,60,8,20,      30,6,20,200,	 0, 0, 0);  //´òÆø£¬µ×ÆøÇåÏ´
+	Motorun(0,1800,BACKWARD,0,     30,60,8,20,      30,6,20,200,	 0, 0, 0);  //æ‰“æ°”ï¼Œåº•æ°”æ¸…æ´—
 	Valve(171);
 	Valve(OpenValve);
 	Delay1ms(2);
 	Valve(150);
 	Delay1ms(27);	
 	
-  	Motorun(0,T,FORWARD,0,      30,60,8,20,      30,6,20,0, 	 0, 0, 0);   //³éÆø£¬ÂúĞĞ³Ì
+  	Motorun(0,T,FORWARD,0,      30,60,8,20,      30,6,20,0, 	 0, 0, 0);   //æŠ½æ°”ï¼Œæ»¡è¡Œç¨‹
 	
 	Delay1ms(1532);
 	
@@ -1925,17 +1916,17 @@ void	SampleFirst(u8 Pnum,u16 m)
 	Valve(170);
 	Valve(151);
 	Delay1ms(2);	
-	Motorun(0, m,  BACKWARD,0,     30,30,0,0,      30,0,0,0,	 	 0, 0, 0);  //·´ÍÆm¸öÂö³å  ,ËÙ¶È4~5r/s
+	Motorun(0, m,  BACKWARD,0,     30,30,0,0,      30,0,0,0,	 	 0, 0, 0);  //åæ¨mä¸ªè„‰å†²  ,é€Ÿåº¦4~5r/s
 	Delay1ms(1024);
 	Valve(161);
 	Delay1ms(54);
-	Motorun(1,T-m,BACKWARD,0,   20,30,1,20, 20,5,50,200	, 0, 0, 0);  //´òÆøÖÁµ×
+	Motorun(1,T-m,BACKWARD,0,   20,30,1,20, 20,5,50,200	, 0, 0, 0);  //æ‰“æ°”è‡³åº•
 	Delay1ms(480);
 	Valve(150);
 	Delay1ms(664);         
-    //×ª»»·¢ËÍÊı¾İ
+    //è½¬æ¢å‘é€æ•°æ®
 	AK_Conv(); Valve(151);
-	Valve(160);//ÅÅÆø  
+	Valve(160);//æ’æ°”  
 	Delay1ms(183);	
 }
 void	BaseFirst(u8 Pnum,u16 m)
@@ -1967,20 +1958,20 @@ void	BaseFirst(u8 Pnum,u16 m)
 
 	Valve(171);	
 	Valve(181);	//1570-->1800
-	Motorun(0,1800,FORWARD,0,      30,60,8,20,      30,6,20,0, 	 OpenValve, 150, 160);   //³éÆø 4~8r/s	Âö³åÊı:1500
+	Motorun(0,1800,FORWARD,0,      30,60,8,20,      30,6,20,0, 	 OpenValve, 150, 160);   //æŠ½æ°” 4~8r/s	è„‰å†²æ•°:1500
 	Valve(CloseValve);
 	Valve(170);
 	Delay1ms(22);
 	Valve(151);
 	Delay1ms(2);
-	Motorun(0,1800,BACKWARD,0,     30,60,8,20,      30,6,20,200,	 0, 0, 0);  //´òÆø£¬µ×ÆøÇåÏ´
+	Motorun(0,1800,BACKWARD,0,     30,60,8,20,      30,6,20,200,	 0, 0, 0);  //æ‰“æ°”ï¼Œåº•æ°”æ¸…æ´—
 	Valve(171);
 	Valve(OpenValve);
 	Delay1ms(2);
 	Valve(150);
 	Delay1ms(27);	
 	
-  	Motorun(0,T,FORWARD,0,      30,60,8,20,      30,6,20,0, 	 0, 0, 0);   //³éÆø£¬ÂúĞĞ³Ì
+  	Motorun(0,T,FORWARD,0,      30,60,8,20,      30,6,20,0, 	 0, 0, 0);   //æŠ½æ°”ï¼Œæ»¡è¡Œç¨‹
 	
 	Delay1ms(1532);
 	
@@ -1990,29 +1981,29 @@ void	BaseFirst(u8 Pnum,u16 m)
 	Valve(170);
 	Valve(151);
 	Delay1ms(2);	
-	Motorun(0, m,  BACKWARD,0,     30,30,0,0,      30,0,0,0,	 	 0, 0, 0);  //·´ÍÆm¸öÂö³å  ,ËÙ¶È4~5r/s
+	Motorun(0, m,  BACKWARD,0,     30,30,0,0,      30,0,0,0,	 	 0, 0, 0);  //åæ¨mä¸ªè„‰å†²  ,é€Ÿåº¦4~5r/s
 	Delay1ms(1024);
 	Valve(161);
 	Delay1ms(54);
-	Motorun(1,T-m,BACKWARD,0,   20,30,1,20, 20,5,50,200	, 0, 0, 0);  //´òÆøÖÁµ×
+	Motorun(1,T-m,BACKWARD,0,   20,30,1,20, 20,5,50,200	, 0, 0, 0);  //æ‰“æ°”è‡³åº•
 	Delay1ms(480);
 	Valve(150);
 
 	Delay1ms(1362);         
-    //×ª»»·¢ËÍÊı¾İ
+    //è½¬æ¢å‘é€æ•°æ®
 	AK_Conv(); Valve(151);
-	Valve(160);//ÅÅÆø  
+	Valve(160);//æ’æ°”  
 	Delay1ms(43);
 }
 /*-----------------------------------
-µ×Æø²âÁ¿×Ó³ÌĞò
-1£º²âÁ¿µÚÒ»Â·Í¨µÀµ×Æø
-2£º²âÁ¿µÚ¶şÂ·Í¨µÀµ×Æø
-3£º²âÁ¿µÚÈıÂ·Í¨µÀµ×Æø
-4£º²âÁ¿µÚËÄÂ·Í¨µÀµ×Æø
-µ¥¸öÍ¨µÀµ×ÆøÏ´ÆøÒ»´Î
-Ò»´Î²âÁ¿
-Pnum Í¨µÀÊı  n Ä¿±êÑ¹Á¦µÄÂö³åÊı
+åº•æ°”æµ‹é‡å­ç¨‹åº
+1ï¼šæµ‹é‡ç¬¬ä¸€è·¯é€šé“åº•æ°”
+2ï¼šæµ‹é‡ç¬¬äºŒè·¯é€šé“åº•æ°”
+3ï¼šæµ‹é‡ç¬¬ä¸‰è·¯é€šé“åº•æ°”
+4ï¼šæµ‹é‡ç¬¬å››è·¯é€šé“åº•æ°”
+å•ä¸ªé€šé“åº•æ°”æ´—æ°”ä¸€æ¬¡
+ä¸€æ¬¡æµ‹é‡
+Pnum é€šé“æ•°  n ç›®æ ‡å‹åŠ›çš„è„‰å†²æ•°
 ----------------------------------*/
 void Baseline(u8 Pnum,u16 pulse,u16 percent)
 {
@@ -2063,37 +2054,37 @@ void Baseline(u8 Pnum,u16 pulse,u16 percent)
     	}
     	 */
     TempValveOpen	= 91;
-    TempValveClose	= 90;	 //¿ÕÆø
+    TempValveClose	= 90;	 //ç©ºæ°”
 
     i	= 175*percent/10;
-    Motorun(1,    i,FORWARD,0, 20,65,8,20,  20,6,20,0,  OpenValve, 150, 161);   //³éÆø 4~8r/s	Âö³åÊı:1500
+    Motorun(1,    i,FORWARD,0, 20,65,8,20,  20,6,20,0,  OpenValve, 150, 161);   //æŠ½æ°” 4~8r/s	è„‰å†²æ•°:1500
     Delay5ms(100);
     Valve(CloseValve);
-    Motorun(1,1750-i,FORWARD,0,20,65,8,20, 20,6,20,0, 	 TempValveOpen, 150, 161);   //³éÆø 4~8r/s	Âö³åÊı:1500
+    Motorun(1,1750-i,FORWARD,0,20,65,8,20, 20,6,20,0, 	 TempValveOpen, 150, 161);   //æŠ½æ°” 4~8r/s	è„‰å†²æ•°:1500
     Delay5ms(100);
-    Motorun(1,1750,BACKWARD,0, 20,65,8,20, 20,6,20,200, TempValveClose, 151, 160);  //´òÆø£¬µ×ÆøÇåÏ´
+    Motorun(1,1750,BACKWARD,0, 20,65,8,20, 20,6,20,200, TempValveClose, 151, 160);  //æ‰“æ°”ï¼Œåº•æ°”æ¸…æ´—
     Delay5ms(100);
     i	= 50*percent;
-    Motorun(1,     i,FORWARD,0,20,65,8,20,  20,6,20,0, OpenValve, 150, 161);   //³éÆø£¬
+    Motorun(1,     i,FORWARD,0,20,65,8,20,  20,6,20,0, OpenValve, 150, 161);   //æŠ½æ°”ï¼Œ
     Delay5ms(200);
     Valve(CloseValve);
-    Motorun(1,T-i,FORWARD,0,20,65,8,20, 20,6,20,0, 	 TempValveOpen, 150, 161);   //³éÆø 4~8r/s	Âö³åÊı:1500
+    Motorun(1,T-i,FORWARD,0,20,65,8,20, 20,6,20,0, 	 TempValveOpen, 150, 161);   //æŠ½æ°” 4~8r/s	è„‰å†²æ•°:1500
     Delay5ms(200);
-    Motorun(1,T,BACKWARD,0,   20,30,1,20, 20,1,20,200, TempValveClose, 151, 161);  //´òÆø
-    Motorun(1,T,FORWARD,0, 	 20,65,8,20, 20,6,20,0, 	 0, 0, 0);   //³éÆø
-    Motorun(1,T,BACKWARD,0,   20,30,1,20, 20,1,20,200,	 0, 0, 0);  //´òÆøÖÁµ×
-    Motorun(1,T,FORWARD,0, 	 20,65,8,20, 20,6,20,0, 	 0, 0, 0);   //³éÆø
+    Motorun(1,T,BACKWARD,0,   20,30,1,20, 20,1,20,200, TempValveClose, 151, 161);  //æ‰“æ°”
+    Motorun(1,T,FORWARD,0, 	 20,65,8,20, 20,6,20,0, 	 0, 0, 0);   //æŠ½æ°”
+    Motorun(1,T,BACKWARD,0,   20,30,1,20, 20,1,20,200,	 0, 0, 0);  //æ‰“æ°”è‡³åº•
+    Motorun(1,T,FORWARD,0, 	 20,65,8,20, 20,6,20,0, 	 0, 0, 0);   //æŠ½æ°”
 
     Delay5ms(300);
-    Motorun(1, pulse,  BACKWARD,0,     40,50,2,20,  30,1,20,0,	 CloseValve, 151, 160);  //·´ÍÆm¸öÂö³å  ,ËÙ¶È4~5r/s
+    Motorun(1, pulse,  BACKWARD,0,     40,50,2,20,  30,1,20,0,	 CloseValve, 151, 160);  //åæ¨mä¸ªè„‰å†²  ,é€Ÿåº¦4~5r/s
     Delay5ms(200);
-    Motorun(1,T-pulse,BACKWARD,0,   30,30,0,20,  30,0,50,200,0, 0, 161);  //´òÆøÖÁµ×
+    Motorun(1,T-pulse,BACKWARD,0,   30,30,0,20,  30,0,50,200,0, 0, 161);  //æ‰“æ°”è‡³åº•
     Delay5ms(100);
     Valve(150);
-    Delay5ms(1000);         //¹²ÑÓÊ±5sµÈÆøÑ¹ÎÈ¶¨
-    //×ª»»·¢ËÍÊı¾İ
+    Delay5ms(1000);         //å…±å»¶æ—¶5sç­‰æ°”å‹ç¨³å®š
+    //è½¬æ¢å‘é€æ•°æ®
     AK_Conv();
-    Valve(160);//ÅÅÆø
+    Valve(160);//æ’æ°”
     Delay5ms(100);
     Valve(151);
 }
@@ -2103,11 +2094,11 @@ void CheckSamplePress(void)
 //	Pressure2 =ADC_Press(ADC_FS);
 //	if(Pressure2<1000)
 //	{
-//		//±¨¸æ¹¤×÷×´Ì¬
+//		//æŠ¥å‘Šå·¥ä½œçŠ¶æ€
 //		QueryFlag	= 1;
-//		//¼ÓÈëÖ¡Í·
+//		//åŠ å…¥å¸§å¤´
 //		Inqueue(0x02);
-//		//¼ÓÈëÃüÁî±êÖ¾
+//		//åŠ å…¥å‘½ä»¤æ ‡å¿—
 //		Inqueue(0xFF);
 //		Inqueue(0x00);
 //		Inqueue(0x26);
@@ -2119,14 +2110,14 @@ void CheckSamplePress(void)
 //	}
 }
 /*-----------------------------------
-ÑùÆø²âÁ¿×Ó³ÌĞò
-1£º²âÁ¿µÚÒ»Â·Í¨µÀµ×Æø
-2£º²âÁ¿µÚ¶şÂ·Í¨µÀµ×Æø
-3£º²âÁ¿µÚÈıÂ·Í¨µÀµ×Æø
-4£º²âÁ¿µÚËÄÂ·Í¨µÀµ×Æø
+æ ·æ°”æµ‹é‡å­ç¨‹åº
+1ï¼šæµ‹é‡ç¬¬ä¸€è·¯é€šé“åº•æ°”
+2ï¼šæµ‹é‡ç¬¬äºŒè·¯é€šé“åº•æ°”
+3ï¼šæµ‹é‡ç¬¬ä¸‰è·¯é€šé“åº•æ°”
+4ï¼šæµ‹é‡ç¬¬å››è·¯é€šé“åº•æ°”
 
-µ¥¸öÍ¨µÀÑùÆøÏ´ÆøÒ»´Î
-Ò»´Î²âÁ¿
+å•ä¸ªé€šé“æ ·æ°”æ´—æ°”ä¸€æ¬¡
+ä¸€æ¬¡æµ‹é‡
 ----------------------------------*/
 void Sample(u8 Pnum,u16 pulse,double percent,u8 t)
 {
@@ -2182,54 +2173,54 @@ void Sample(u8 Pnum,u16 pulse,double percent,u8 t)
 	Valve(181);
 	if(t==0)
 	{	
-	    Motorun(0,2875,FORWARD,0,  30,60,8,20,  30,6,20,0, OpenValve, 150, 160);   //³éÆø 4~8r/s	Âö³åÊı:1500
+	    Motorun(0,2875,FORWARD,0,  30,60,8,20,  30,6,20,0, OpenValve, 150, 160);   //æŠ½æ°” 4~8r/s	è„‰å†²æ•°:1500
     	Delay5ms(300);	 //200
-		Motorun(0,2875,BACKWARD,0, 30,60,8,20,  30,6,20,200,CloseValve, 151, 160);  //´òÆø£¬µ×ÆøÇåÏ´ 
+		Motorun(0,2875,BACKWARD,0, 30,60,8,20,  30,6,20,200,CloseValve, 151, 160);  //æ‰“æ°”ï¼Œåº•æ°”æ¸…æ´— 
 		Delay5ms(10);
-  		Motorun(0,T,FORWARD,0,  30,60,8,20,  30,6,20,0,  OpenValve, 151, 161);   //³éÆø£¬ÂúĞĞ³Ì
+  		Motorun(0,T,FORWARD,0,  30,60,8,20,  30,6,20,0,  OpenValve, 151, 161);   //æŠ½æ°”ï¼Œæ»¡è¡Œç¨‹
 		Delay5ms(300);
 	}
 	else
 	{				
 		i	= (u16)(2875*percent);
-		Motorun(0,    i,FORWARD,0, 30,60,4,20,  30,4,20,0,  OpenValve, 150, 160);   //³éÆø 4~8r/s	Âö³åÊı:1500
+		Motorun(0,    i,FORWARD,0, 30,60,4,20,  30,4,20,0,  OpenValve, 150, 160);   //æŠ½æ°” 4~8r/s	è„‰å†²æ•°:1500
 		Delay5ms(300);
 		Valve(CloseValve);
-		Motorun(0,2875-i,FORWARD,0,30,30,0,0, 30,0,0,0, 	 TempValveOpen, 150, 160);   //³éÆø 4~8r/s	Âö³åÊı:1500
+		Motorun(0,2875-i,FORWARD,0,30,30,0,0, 30,0,0,0, 	 TempValveOpen, 150, 160);   //æŠ½æ°” 4~8r/s	è„‰å†²æ•°:1500
 		Delay5ms(300);
-		Motorun(0,2875,BACKWARD,0, 30,30,8,20, 30,6,20,200, TempValveClose, 151, 160);  //´òÆø£¬µ×ÆøÇåÏ´
+		Motorun(0,2875,BACKWARD,0, 30,30,8,20, 30,6,20,200, TempValveClose, 151, 160);  //æ‰“æ°”ï¼Œåº•æ°”æ¸…æ´—
 		Delay5ms(10);
 
 		i	= (u16)(T*percent);
-  		Motorun(0, i,FORWARD,0,30,60,4,20,  30,4,20,0, OpenValve, 150, 160);   //³éÆø£¬
+  		Motorun(0, i,FORWARD,0,30,60,4,20,  30,4,20,0, OpenValve, 150, 160);   //æŠ½æ°”ï¼Œ
 		Delay5ms(300);
 		Valve(CloseValve);
-		Motorun(0,T-i,FORWARD,0,30,30,0,0, 30,0,0,0, 	 TempValveOpen, 150, 160);   //³éÆø 4~8r/s	Âö³åÊı:1500
+		Motorun(0,T-i,FORWARD,0,30,30,0,0, 30,0,0,0, 	 TempValveOpen, 150, 160);   //æŠ½æ°” 4~8r/s	è„‰å†²æ•°:1500
 		Delay5ms(300);
 		Valve(170);
-		Motorun(1,T,BACKWARD,0,  20,30,1,20, 20,5,50,200, TempValveClose, 151, 161);  //´òÆø
-		Motorun(0,T,FORWARD,0, 	 30,60,8,20, 30,6,20,0, 	 0, 0, 0);   //³éÆø 		
-		Motorun(1,T,BACKWARD,0,  20,30,1,20, 20,5,50,200, 0, 0, 0);  //´òÆø
+		Motorun(1,T,BACKWARD,0,  20,30,1,20, 20,5,50,200, TempValveClose, 151, 161);  //æ‰“æ°”
+		Motorun(0,T,FORWARD,0, 	 30,60,8,20, 30,6,20,0, 	 0, 0, 0);   //æŠ½æ°” 		
+		Motorun(1,T,BACKWARD,0,  20,30,1,20, 20,5,50,200, 0, 0, 0);  //æ‰“æ°”
 		Delay5ms(400);
-		Motorun(0,T,FORWARD,0, 	 30,60,8,20, 30,6,20,0, 	 0, 0, 0);   //³éÆø 
+		Motorun(0,T,FORWARD,0, 	 30,60,8,20, 30,6,20,0, 	 0, 0, 0);   //æŠ½æ°” 
 	}
 	Valve(CloseValve);
 	CheckSamplePress();
 	Valve(170);
-	Motorun(0, pulse,  BACKWARD,0,     30,30,0,0,  30,0,0,0,	 CloseValve, 151, 160);  //·´ÍÆm¸öÂö³å  ,ËÙ¶È4~5r/s
+	Motorun(0, pulse,  BACKWARD,0,     30,30,0,0,  30,0,0,0,	 CloseValve, 151, 160);  //åæ¨mä¸ªè„‰å†²  ,é€Ÿåº¦4~5r/s
 	Delay5ms(300);	   //200
-	Motorun(1,T-pulse,BACKWARD,0,   20,30,1,20,  20,5,50,200,0, 0, 161);  //´òÆøÖÁµ×
+	Motorun(1,T-pulse,BACKWARD,0,   20,30,1,20,  20,5,50,200,0, 0, 161);  //æ‰“æ°”è‡³åº•
 
 	Delay1ms(480);
 	Valve(150);
 //	if(Pnum/10==2)
-//		Delay1ms(5700);         //¹²ÑÓÊ±5sµÈÆøÑ¹ÎÈ¶¨
+//		Delay1ms(5700);         //å…±å»¶æ—¶5sç­‰æ°”å‹ç¨³å®š
 //	else
 		Delay1ms(5000);
-    //×ª»»·¢ËÍÊı¾İ
+    //è½¬æ¢å‘é€æ•°æ®
 	AK_Conv();
 	Valve(151);
-	Valve(160);//ÅÅÆø  
+	Valve(160);//æ’æ°”  
 	Delay5ms(200);
 }
 
@@ -2238,9 +2229,9 @@ void Motor_Init(void)
     u8 i;
     u8 Trip2;
     QueryFlag	= 1;
-    //¼ÓÈëÖ¡Í·
+    //åŠ å…¥å¸§å¤´
     Inqueue(0x02);
-    //¼ÓÈëÃüÁî±êÖ¾
+    //åŠ å…¥å‘½ä»¤æ ‡å¿—
     Inqueue(0xFF);
     Inqueue(0x00);
     Inqueue(0x1D);
@@ -2250,9 +2241,9 @@ void Motor_Init(void)
     Delay5ms(40);
 
 	QueryFlag_uart1	= 1;
-    //¼ÓÈëÖ¡Í·
+    //åŠ å…¥å¸§å¤´
     Inqueue_uart1(0x02);
-    //¼ÓÈëÃüÁî±êÖ¾
+    //åŠ å…¥å‘½ä»¤æ ‡å¿—
     Inqueue_uart1(0xFF);
     Inqueue_uart1(0x00);
     Inqueue_uart1(0x1D);
@@ -2270,7 +2261,7 @@ void Motor_Init(void)
         Trip2= IsTripSwitchClosed() ;
         if(Trip2)
         {
-            /*ÏÔÊ¾¹âµç¿ª¹Ø³ö´í*/
+            /*æ˜¾ç¤ºå…‰ç”µå¼€å…³å‡ºé”™*/
             Sys_Status=Sys_Error;
         }
         else
@@ -2285,36 +2276,36 @@ void Motor_Init(void)
         Motorun(  0,6000,BACKWARD,0,     20,30,0,0,      30,0,0,200,      90,151,160);
         if(!TripSwitchStatus)
         {
-            /*ÏÔÊ¾¹âµç¿ª¹Ø³ö´í*/
+            /*æ˜¾ç¤ºå…‰ç”µå¼€å…³å‡ºé”™*/
             Sys_Status=Sys_Error;
         }
     }
 
     QueryFlag	= 1;
-    //¼ÓÈëÖ¡Í·
+    //åŠ å…¥å¸§å¤´
     Inqueue(0x02);
-    //¼ÓÈëÃüÁî±êÖ¾
+    //åŠ å…¥å‘½ä»¤æ ‡å¿—
     Inqueue(0xFF);
     Inqueue(0x00);
     if(Sys_Status==Sys_Error)
-        Inqueue(0x1E);	//³ö´í±êÖ¾
+        Inqueue(0x1E);	//å‡ºé”™æ ‡å¿—
     else
-        Inqueue(0x1F);	//Õı³£±êÖ¾
+        Inqueue(0x1F);	//æ­£å¸¸æ ‡å¿—
     for(i=0; i<FrameLength-5; i++)
         Inqueue(0);
     Inqueue(0x03);
     Delay5ms(10);
 
 	QueryFlag_uart1	= 1;
-    //¼ÓÈëÖ¡Í·
+    //åŠ å…¥å¸§å¤´
     Inqueue_uart1(0x02);
-    //¼ÓÈëÃüÁî±êÖ¾
+    //åŠ å…¥å‘½ä»¤æ ‡å¿—
     Inqueue_uart1(0xFF);
     Inqueue_uart1(0x00);
     if(Sys_Status==Sys_Error)
-        Inqueue_uart1(0x1E);	//³ö´í±êÖ¾
+        Inqueue_uart1(0x1E);	//å‡ºé”™æ ‡å¿—
     else
-        Inqueue_uart1(0x1F);	//Õı³£±êÖ¾
+        Inqueue_uart1(0x1F);	//æ­£å¸¸æ ‡å¿—
     for(i=0; i<FrameLength-5; i++)
         Inqueue_uart1(0);
     Inqueue_uart1(0x03);
@@ -2387,7 +2378,7 @@ void SamplePosition()
 			LED(1,0);
 			LED(2,0);
 			Inqueue(0x02);
-			//¼ÓÈëÃüÁî±êÖ¾
+			//åŠ å…¥å‘½ä»¤æ ‡å¿—
 			Inqueue(0xFF);
 			Inqueue(0x00);
 			Inqueue(0x27);
@@ -2398,7 +2389,7 @@ void SamplePosition()
 			checkChannel=0;	
 
 			Inqueue_uart1(0x02);
-			//¼ÓÈëÃüÁî±êÖ¾
+			//åŠ å…¥å‘½ä»¤æ ‡å¿—
 			Inqueue_uart1(0xFF);
 			Inqueue_uart1(0x00);
 			Inqueue_uart1(0x27);
@@ -2496,7 +2487,7 @@ void EXTI_Config(void)
 void SendDataTemperature(void)
 {
 	u8	i;
-	//µ±Î´ÓĞTXE¿ªÆôÊ±¹Ø±Õ´®¿Ú²éÑ¯
+	//å½“æœªæœ‰TXEå¼€å¯æ—¶å…³é—­ä¸²å£æŸ¥è¯¢
 //	while(USART1->CR1&0x0080);
 	QueryFlag	= 1;
 	Inqueue(0x02);
@@ -2541,7 +2532,7 @@ void SendDataTemperature(void)
 	Inqueue_uart1(0x03);		 
 }
 
-void ReadS_GPIO(void) //·¢ËÍGPIO¿Ú×´Ì¬
+void ReadS_GPIO(void) //å‘é€GPIOå£çŠ¶æ€
 {  
 	u16 i,j;
    	for(i=0,j=1;i<=15;i++)
@@ -2549,7 +2540,7 @@ void ReadS_GPIO(void) //·¢ËÍGPIO¿Ú×´Ì¬
 		j=2^i; 
 		G[i]=GPIO_ReadInputDataBit(GPIOA, j);	
 	}
-	Inqueue_uart1(0x02);//¼ÓÈëÃüÁî±êÖ¾
+	Inqueue_uart1(0x02);//åŠ å…¥å‘½ä»¤æ ‡å¿—
     Inqueue_uart1(0xFF);
     Inqueue_uart1(0x00);
     Inqueue_uart1(0xA1);
@@ -2567,7 +2558,7 @@ void ReadS_GPIO(void) //·¢ËÍGPIO¿Ú×´Ì¬
 		j=2^i;
 		G[i]=GPIO_ReadInputDataBit(GPIOB, j);	
 	}
-	Inqueue_uart1(0x02);//¼ÓÈëÃüÁî±êÖ¾
+	Inqueue_uart1(0x02);//åŠ å…¥å‘½ä»¤æ ‡å¿—
     Inqueue_uart1(0xFF);
     Inqueue_uart1(0x00);
     Inqueue_uart1(0xA2);
@@ -2585,7 +2576,7 @@ void ReadS_GPIO(void) //·¢ËÍGPIO¿Ú×´Ì¬
 		j=2^i;
 		G[i]=GPIO_ReadInputDataBit(GPIOC, j);	
 	}
-	Inqueue_uart1(0x02);//¼ÓÈëÃüÁî±êÖ¾
+	Inqueue_uart1(0x02);//åŠ å…¥å‘½ä»¤æ ‡å¿—
     Inqueue_uart1(0xFF);
     Inqueue_uart1(0x00);
     Inqueue_uart1(0xA3);
@@ -2603,7 +2594,7 @@ void ReadS_GPIO(void) //·¢ËÍGPIO¿Ú×´Ì¬
 		j=2^i;
 		G[i]=GPIO_ReadInputDataBit(GPIOD, j);	
 	}
-	Inqueue_uart1(0x02);//¼ÓÈëÃüÁî±êÖ¾
+	Inqueue_uart1(0x02);//åŠ å…¥å‘½ä»¤æ ‡å¿—
     Inqueue_uart1(0xFF);
     Inqueue_uart1(0x00);
     Inqueue_uart1(0xA4);
@@ -2621,7 +2612,7 @@ void ReadS_GPIO(void) //·¢ËÍGPIO¿Ú×´Ì¬
 		j=2^i;
 		G[i]=GPIO_ReadInputDataBit(GPIOE, j);	
 	}
-	Inqueue_uart1(0x02);//¼ÓÈëÃüÁî±êÖ¾
+	Inqueue_uart1(0x02);//åŠ å…¥å‘½ä»¤æ ‡å¿—
     Inqueue_uart1(0xFF);
     Inqueue_uart1(0x00);
     Inqueue_uart1(0xA5);
@@ -2639,7 +2630,7 @@ void ReadS_GPIO(void) //·¢ËÍGPIO¿Ú×´Ì¬
 		j=2^i;
 		G[i]=GPIO_ReadInputDataBit(GPIOF, j);	
 	}
-	Inqueue_uart1(0x02);//¼ÓÈëÃüÁî±êÖ¾
+	Inqueue_uart1(0x02);//åŠ å…¥å‘½ä»¤æ ‡å¿—
     Inqueue_uart1(0xFF);
     Inqueue_uart1(0x00);
     Inqueue_uart1(0xA6);
@@ -2653,7 +2644,7 @@ void ReadS_GPIO(void) //·¢ËÍGPIO¿Ú×´Ì¬
     Inqueue_uart1(0x03);
 	Delay5ms(20);
 }
-void ReadS_V(void)		//·¢ËÍÆø·§×´Ì¬
+void ReadS_V(void)		//å‘é€æ°”é˜€çŠ¶æ€
 {	
 	u8 i;
 	V[0]=GPIO_ReadInputDataBit(GPIO_Valve1, GPIO_Pin_Valve1);
@@ -2675,7 +2666,7 @@ void ReadS_V(void)		//·¢ËÍÆø·§×´Ì¬
 	V[16]=GPIO_ReadInputDataBit(GPIO_Valve13_18,GPIO_Pin_Valve17);
 	V[17]=GPIO_ReadInputDataBit(GPIO_M1EN, GPIO_Pin_M1EN);
 	V[18]=GPIO_ReadInputDataBit(GPIO_M2EN, GPIO_Pin_M2EN);
-	Inqueue_uart1(0x02);//¼ÓÈëÃüÁî±êÖ¾
+	Inqueue_uart1(0x02);//åŠ å…¥å‘½ä»¤æ ‡å¿—
     Inqueue_uart1(0xFF);
     Inqueue_uart1(0x00);
     Inqueue_uart1(0xA7);
@@ -2709,17 +2700,17 @@ void Speaker(u8 Num)
 }
 void Delay1ms(u32 nTime)
 {
-  	/* Enable the SysTick Counter ÔÊĞíSysTick¼ÆÊıÆ÷*/
+  	/* Enable the SysTick Counter å…è®¸SysTickè®¡æ•°å™¨*/
   	SysTick_CounterCmd(SysTick_Counter_Enable);
   
   	TimingDelay = nTime;
 
  	while(TimingDelay != 0)
-    	;  //µÈ´ı¼ÆÊıÖÁ0
+    	;  //ç­‰å¾…è®¡æ•°è‡³0
 
-  /* Disable the SysTick Counter ½ûÖ¹SysTick¼ÆÊıÆ÷*/
+  /* Disable the SysTick Counter ç¦æ­¢SysTickè®¡æ•°å™¨*/
  // SysTick_CounterCmd(SysTick_Counter_Disable);
-  /* Clear the SysTick Counter ÇåÁãSysTick¼ÆÊıÆ÷*/
+  /* Clear the SysTick Counter æ¸…é›¶SysTickè®¡æ•°å™¨*/
 	SysTick_CounterCmd(SysTick_Counter_Clear);
 }
 void Valve_GPIO_Config(void)
@@ -2742,7 +2733,7 @@ void Valve_GPIO_Config(void)
 	GPIO_InitStructure.GPIO_Mode 	= GPIO_Mode_Out_PP;
 	GPIO_Init(GPIO_Valve13_18, &GPIO_InitStructure);
 
-	//ËùÓĞ·§ÃÅµÍµçÆ½
+	//æ‰€æœ‰é˜€é—¨ä½ç”µå¹³
 	GPIO_WriteBit(GPIO_Valve1, GPIO_Pin_Valve1,  Bit_RESET);
 	GPIO_WriteBit(GPIO_Valve2_3,  GPIO_Pin_Valve2,  Bit_RESET);
 	GPIO_WriteBit(GPIO_Valve4_12, GPIO_Pin_Valve8,  Bit_RESET);
@@ -2879,18 +2870,18 @@ void Valve(unsigned char Vnum)
 void SendData(void)
 {
 //collin modify20141029 usart3-->usart1
-	//µ±Î´ÓĞTXE¿ªÆôÊ±¹Ø±Õ´®¿Ú²éÑ¯
+	//å½“æœªæœ‰TXEå¼€å¯æ—¶å…³é—­ä¸²å£æŸ¥è¯¢
 	while(USART1->CR1&0x0080);
 	QueryFlag_uart1	= 0;
 	SendLength_uart1	= FrameLength;
 	SendCounter_uart1	= 0;								   
-	//Æô¶¯´®¿Ú·¢ËÍÖĞ¶Ï
+	//å¯åŠ¨ä¸²å£å‘é€ä¸­æ–­
 	USART_ITConfig(USART1, USART_IT_TXE, ENABLE);
 	while(USART3->CR1&0x0080);
 	QueryFlag	= 0;
 	SendLength	= FrameLength;
 	SendCounter	= 0;
-	//Æô¶¯´®¿Ú·¢ËÍÖĞ¶Ï
+	//å¯åŠ¨ä¸²å£å‘é€ä¸­æ–­
 	USART_ITConfig(USART3, USART_IT_TXE, ENABLE);
 	//end	
 }
@@ -2898,17 +2889,17 @@ void SendData(void)
 void Sys_100msClock_Config(void)
 {
 	TIM_TimeBaseInitTypeDef  TIM_TimeBaseStructure;
-	//ÖÜÆÚ100ms
+	//å‘¨æœŸ100ms
 	TIM_TimeBaseStructure.TIM_Period	= 6143; 
 	TIM_TimeBaseStructure.TIM_Prescaler = 999;
 	TIM_TimeBaseStructure.TIM_ClockDivision = 0;
 	TIM_TimeBaseStructure.TIM_CounterMode = TIM_CounterMode_Up;
 	TIM_TimeBaseStructure.TIM_RepetitionCounter=0;
 	TIM_TimeBaseInit(TIMx, &TIM_TimeBaseStructure);
-	//¼ÆÊıÆ÷ÉÏÒçÖĞ¶ÏÉè¶¨
-	TIM_ClearFlag(TIMx, TIM_FLAG_Update);/*Çå³ı¸üĞÂ±êÖ¾Î»*/
-	TIM_ARRPreloadConfig(TIMx, DISABLE);/*Ô¤×°ÔØ¼Ä´æÆ÷µÄÄÚÈİ±»Á¢¼´´«ËÍµ½Ó°×Ó¼Ä´æÆ÷ */
-	//Æô¶¯¶¨Ê±Æ÷
+	//è®¡æ•°å™¨ä¸Šæº¢ä¸­æ–­è®¾å®š
+	TIM_ClearFlag(TIMx, TIM_FLAG_Update);/*æ¸…é™¤æ›´æ–°æ ‡å¿—ä½*/
+	TIM_ARRPreloadConfig(TIMx, DISABLE);/*é¢„è£…è½½å¯„å­˜å™¨çš„å†…å®¹è¢«ç«‹å³ä¼ é€åˆ°å½±å­å¯„å­˜å™¨ */
+	//å¯åŠ¨å®šæ—¶å™¨
 	TIM_ITConfig(TIMx, TIM_IT_Update, ENABLE);   
 	TIM_Cmd(TIMx, ENABLE);
 }
@@ -2939,7 +2930,7 @@ void Uart1_Config()
 	USART_Init(USART1, &USART_InitStructure);
 	/* Enable the USART1 */
 	USART_Cmd(USART1, ENABLE);
-	//Æô¶¯´®¿Ú½ÓÊÕÖĞ¶Ï
+	//å¯åŠ¨ä¸²å£æ¥æ”¶ä¸­æ–­
 	USART_ITConfig(USART1, USART_IT_RXNE, ENABLE);		
 }
 
@@ -2968,7 +2959,7 @@ void Uart3_Config()
 	USART_Init(USART3, &USART_InitStructure);
 	/* Enable the USART3 */
 	USART_Cmd(USART3, ENABLE);
-	//Æô¶¯´®¿Ú½ÓÊÕÖĞ¶Ï
+	//å¯åŠ¨ä¸²å£æ¥æ”¶ä¸­æ–­
 	USART_ITConfig(USART3, USART_IT_RXNE, ENABLE);		
 }
 //end
@@ -2976,7 +2967,7 @@ void Uart3_Config()
 void Inqueue(unsigned char byte)
 {
 	if(PHead-1==PEnd || PHead+BufferSize-1==PEnd)
-		return;//Ñ­»·¶ÓÁĞÒÑÂú
+		return;//å¾ªç¯é˜Ÿåˆ—å·²æ»¡
 
 	SendBuffer[PEnd++]=byte;
 	if(PEnd>=BufferSize) 
@@ -2986,7 +2977,7 @@ void Inqueue(unsigned char byte)
 void Inqueue_uart1(unsigned char byte)
 {
 	if(PHead_uart1-1==PEnd_uart1 || PHead_uart1+BufferSize-1==PEnd_uart1)
-		return;//Ñ­»·¶ÓÁĞÒÑÂú
+		return;//å¾ªç¯é˜Ÿåˆ—å·²æ»¡
 
 	SendBuffer_uart1[PEnd_uart1++]=byte;
 	if(PEnd_uart1>=BufferSize) 
@@ -2996,7 +2987,7 @@ void Inqueue_uart1(unsigned char byte)
 unsigned char Exqueue(void)
 {
 	unsigned char ReturnChar;
-	if(PEnd==PHead)	//Èç¹û¿Õ¶ÓÁĞ
+	if(PEnd==PHead)	//å¦‚æœç©ºé˜Ÿåˆ—
 		return 0;
 	ReturnChar=SendBuffer[PHead++];
 	if(PHead>=BufferSize) PHead-=BufferSize;
@@ -3006,7 +2997,7 @@ unsigned char Exqueue(void)
 unsigned char Exqueue_uart1(void)
 {
 	unsigned char ReturnChar_uart1;
-	if(PEnd_uart1==PHead_uart1)	//Èç¹û¿Õ¶ÓÁĞ
+	if(PEnd_uart1==PHead_uart1)	//å¦‚æœç©ºé˜Ÿåˆ—
 		return 0;
 	ReturnChar_uart1=SendBuffer_uart1[PHead_uart1++];
 	if(PHead_uart1>=BufferSize) PHead_uart1-=BufferSize;
@@ -3032,32 +3023,32 @@ unsigned char QLength_uart1(void)
 void Delay5ms_Config(void)
 {
 	/* Disable SysTick Counter */
-	SysTick_CounterCmd(SysTick_Counter_Disable);        //Ê§ÄÜ¼ÆÊıÆ÷ 
+	SysTick_CounterCmd(SysTick_Counter_Disable);        //å¤±èƒ½è®¡æ•°å™¨ 
 
 	/* Disable the SysTick Interrupt */
-	SysTick_ITConfig(DISABLE);   //¹Ø±ÕÖĞ¶Ï
+	SysTick_ITConfig(DISABLE);   //å…³é—­ä¸­æ–­
 
 	/* Configure HCLK clock as SysTick clock source */
-	SysTick_CLKSourceConfig(SysTick_CLKSource_HCLK_Div8);   //8·ÖÆµ
+	SysTick_CLKSourceConfig(SysTick_CLKSource_HCLK_Div8);   //8åˆ†é¢‘
 	/* SysTick interrupt each 1000 Hz with HCLK equal to 61.44MHz */
-	SysTick_SetReload(3840);   //ÖÜÆÚ10ms
+	SysTick_SetReload(3840);   //å‘¨æœŸ10ms
 	/* Enable the SysTick Interrupt */
-	SysTick_ITConfig(ENABLE);  //´ò¿ªÖĞ¶Ï
+	SysTick_ITConfig(ENABLE);  //æ‰“å¼€ä¸­æ–­
 }
 
 void Delay5ms(u32 nTime)
 {
-	/* Enable the SysTick Counter ÔÊĞíSysTick¼ÆÊıÆ÷*/
+	/* Enable the SysTick Counter å…è®¸SysTickè®¡æ•°å™¨*/
 	SysTick_CounterCmd(SysTick_Counter_Enable);
 
 	TimingDelay = 5*nTime;
 
 	while(TimingDelay != 0)
-		;  //µÈ´ı¼ÆÊıÖÁ0
+		;  //ç­‰å¾…è®¡æ•°è‡³0
 
-	/* Disable the SysTick Counter ½ûÖ¹SysTick¼ÆÊıÆ÷*/
+	/* Disable the SysTick Counter ç¦æ­¢SysTickè®¡æ•°å™¨*/
 	// SysTick_CounterCmd(SysTick_Counter_Disable);
-	/* Clear the SysTick Counter ÇåÁãSysTick¼ÆÊıÆ÷*/
+	/* Clear the SysTick Counter æ¸…é›¶SysTickè®¡æ•°å™¨*/
 	SysTick_CounterCmd(SysTick_Counter_Clear);
 }
 void LED(u8 Num, u8 Status)
@@ -3107,12 +3098,12 @@ void GPIO_Configuration(void)
 	GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
 	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_Out_PP;
 	GPIO_Init(GPIO_LED1, &GPIO_InitStructure);
-	/*LCD¿ØÖÆ¿Ú*/
+	/*LCDæ§åˆ¶å£*/
    	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_1|GPIO_Pin_2|GPIO_Pin_3|GPIO_Pin_4|GPIO_Pin_5|GPIO_Pin_6 ;
 	GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
 	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_Out_PP;
 	GPIO_Init(GPIOE, &GPIO_InitStructure);
-	/*LCDÊı¾İ¿Ú*/
+	/*LCDæ•°æ®å£*/
 	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_0|GPIO_Pin_1|GPIO_Pin_2|GPIO_Pin_3|GPIO_Pin_4|GPIO_Pin_5|GPIO_Pin_6|GPIO_Pin_7 ;
 	GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
 	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_Out_PP;
@@ -3237,7 +3228,7 @@ void NVIC_Configuration(void)
 	NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
 	NVIC_Init(&NVIC_InitStructure);
 
-	//ĞĞ³Ì¿ª¹ØÍâ²¿ÖĞ¶Ï
+	//è¡Œç¨‹å¼€å…³å¤–éƒ¨ä¸­æ–­
 	NVIC_InitStructure.NVIC_IRQChannel = EXTI15_10_IRQChannel;
  	NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 5;
   	NVIC_InitStructure.NVIC_IRQChannelSubPriority = 0;
@@ -3316,15 +3307,15 @@ void pprint(unsigned char ch)
 	Delay(200);
 	STB=1;                                               
 }
-u8 const table_week[12]={0,3,3,6,1,4,6,2,5,0,3,5}; //ÔÂĞŞÕıÊı¾İ±í
+u8 const table_week[12]={0,3,3,6,1,4,6,2,5,0,3,5}; //æœˆä¿®æ­£æ•°æ®è¡¨
 u8 RTC_Get_Week(u16 year,u8 month,u8 day)
 {
     u16 temp2;
     u8 yearH,yearL;
     yearH=year/100; yearL=year%100;
-    // Èç¹ûÎª21ÊÀ¼Í£¬Äê·İÊı¼Ó100
+    // å¦‚æœä¸º21ä¸–çºªï¼Œå¹´ä»½æ•°åŠ 100
     if (yearH>19)yearL+=100;
-    // Ëù¹ıÈòÄêÊıÖ»Ëã1900ÄêÖ®ºóµÄ
+    // æ‰€è¿‡é—°å¹´æ•°åªç®—1900å¹´ä¹‹åçš„
     temp2=yearL+yearL/4;
     temp2=temp2%7;
     temp2=temp2+day+table_week[month-1];
@@ -3362,33 +3353,33 @@ void Set_time(void)
 }
 
 
-void print_test(void)											//´òÓ¡¼ì²â
+void print_test(void)											//æ‰“å°æ£€æµ‹
 {	
 	u8 i; 
-//	pprint(0x1b);pprint(0x38);pprint(0x00);               	//µ÷ÓÃºº×Ö³ö¿âÖ¸Áî
+//	pprint(0x1b);pprint(0x38);pprint(0x00);               	//è°ƒç”¨æ±‰å­—å‡ºåº“æŒ‡ä»¤
 	pprint(0x1c);pprint(0x26);  
-	pprint(0x1b);pprint(0x55);pprint(2);		            //×ÖÌå´óĞ¡
-	pprint(0x1b);pprint(0x31);pprint(10);                 	//ĞĞ¼ä¾à
+	pprint(0x1b);pprint(0x55);pprint(2);		            //å­—ä½“å¤§å°
+	pprint(0x1b);pprint(0x31);pprint(10);                 	//è¡Œé—´è·
     print_time();
     for(i=0;i<strlen(table1);i++)pprint(table1[i]); 	    //"________"	
-	pprint(0x0d);				                            //»Ø³µ
-	for(i=0;i<strlen(DYZC);i++)pprint(DYZC[i]); 			//£¢´òÓ¡Õı³£!£¢  	
-	pprint(0x0d);				                            //»Ø³µ 
+	pprint(0x0d);				                            //å›è½¦
+	for(i=0;i<strlen(DYZC);i++)pprint(DYZC[i]); 			//ï¼‚æ‰“å°æ­£å¸¸!ï¼‚  	
+	pprint(0x0d);				                            //å›è½¦ 
 	for(i=0;i<strlen(table2);i++)pprint(table2[i]); 	    //"********"
-	pprint(0x0d);				                        	//»Ø³µ 
-	for(i=0;i<strlen(DYJJC);i++)pprint(DYJJC[i]);		   	//´òÓ¡»ú¼ì²â    	
-	pprint(0x0d);				                            //»Ø³µ 
-	pprint(0x0d);				                            //»Ø³µ 
-	pprint(0x0d);				                       		//»Ø³µ     
+	pprint(0x0d);				                        	//å›è½¦ 
+	for(i=0;i<strlen(DYJJC);i++)pprint(DYJJC[i]);		   	//æ‰“å°æœºæ£€æµ‹    	
+	pprint(0x0d);				                            //å›è½¦ 
+	pprint(0x0d);				                            //å›è½¦ 
+	pprint(0x0d);				                       		//å›è½¦     
 }
-void print_time(void)                                         //´òÓ¡ÈÕÆÚÊ±¼ä
+void print_time(void)                                         //æ‰“å°æ—¥æœŸæ—¶é—´
 {
     u8 i;
     GetDate();
 	GetTime();
 	pprint(0x1c);pprint(0x26);
-    pprint(0x0d);				                            //»Ø³µ
-    for(i=0;i<strlen(SJ);i++)pprint(SJ[i]); 	            //"Ê±¼ä:"       
+    pprint(0x0d);				                            //å›è½¦
+    for(i=0;i<strlen(SJ);i++)pprint(SJ[i]); 	            //"æ—¶é—´:"       
     pprint(table[2]);
 	pprint(table[0]);
 	pprint(table[timer.w_year/10%10]);
@@ -3399,25 +3390,25 @@ void print_time(void)                                         //´òÓ¡ÈÕÆÚÊ±¼ä
     pprint(J[1]);
     pprint(table[timer.w_date/10]);
 	pprint(table[timer.w_date%10]);
-    for(i=0;i<strlen(KG1);i++)pprint(KG1[i]); 	            //"¿Õ¸ñ"    
+    for(i=0;i<strlen(KG1);i++)pprint(KG1[i]); 	            //"ç©ºæ ¼"    
     pprint(table[timer.hour/10]);
 	pprint(table[timer.hour%10]);
     pprint(J[2]);
     pprint(table[timer.min/10]);
 	pprint(table[timer.min%10]);
-    pprint(0x0d);				                            //»Ø³µ  
+    pprint(0x0d);				                            //å›è½¦  
 }
 void print_pressure(u16 p,u8 f)
 {
   	u8 i;
 	pprint(0x1c);pprint(0x26);		
-//  pprint(0x1b);pprint(0x38);pprint(0x00);               	//µ÷ÓÃºº×Ö³ö¿âÖ¸Áî 
-	pprint(0x1b);pprint(0x55);pprint(2);		            //×ÖÌå´óĞ¡
-	pprint(0x1b);pprint(0x31);pprint(10);                 	//ĞĞ¼ä¾à	
+//  pprint(0x1b);pprint(0x38);pprint(0x00);               	//è°ƒç”¨æ±‰å­—å‡ºåº“æŒ‡ä»¤ 
+	pprint(0x1b);pprint(0x55);pprint(2);		            //å­—ä½“å¤§å°
+	pprint(0x1b);pprint(0x31);pprint(10);                 	//è¡Œé—´è·	
   	if(f==0)
 	{
-		pprint(0x0d);				                            //»Ø³µ
-		for(i=0;i<strlen(DQYL);i++)pprint(DQYL[i]); 	        //"µ±Ç°Ñ¹Á¦Öµ£º"
+		pprint(0x0d);				                            //å›è½¦
+		for(i=0;i<strlen(DQYL);i++)pprint(DQYL[i]); 	        //"å½“å‰å‹åŠ›å€¼ï¼š"
     	pprint(table[p/1000]);
     	pprint(D[0]);
     	pprint(table[p/100%10]);
@@ -3427,14 +3418,14 @@ void print_pressure(u16 p,u8 f)
 	}
 	else
 	{
-		pprint(0x0d);				                            //»Ø³µ
-		if(f==2){for(i=0;i<strlen(LQ);i++)pprint(LQ[i]);}//Â©Æø
-        if(f==1){for(i=0;i<strlen(YLZC);i++)pprint(YLZC[i]);}//Ñ¹Á¦Õı³£  
+		pprint(0x0d);				                            //å›è½¦
+		if(f==2){for(i=0;i<strlen(LQ);i++)pprint(LQ[i]);}//æ¼æ°”
+        if(f==1){for(i=0;i<strlen(YLZC);i++)pprint(YLZC[i]);}//å‹åŠ›æ­£å¸¸  
         pprint(0x0d); 
         print_date_time();
         for(i=0;i<strlen(table2);i++)pprint(table2[i]); 	    //"*************" 	
 		pprint(0x0d);
-		for(i=0;i<strlen(YLJC);i++)pprint(YLJC[i]); 	        //" Ñ¹Ç¿¼ì²â  "
+		for(i=0;i<strlen(YLJC);i++)pprint(YLJC[i]); 	        //" å‹å¼ºæ£€æµ‹  "
 		pprint(0x0d);
 		pprint(0x0d);
 		pprint(0x0d);
@@ -3444,34 +3435,34 @@ void print_error(u8 type)
 {
 	u8 i;
 	pprint(0x1c);pprint(0x26);
-//	pprint(0x1b);pprint(0x38);pprint(0x00);               	//µ÷ÓÃºº×Ö³ö¿âÖ¸Áî 	 ÀàĞÍ
-	pprint(0x1b);pprint(0x55);pprint(2);		            //×ÖÌå´óĞ¡
-	pprint(0x1b);pprint(0x31);pprint(10);                 	//ĞĞ¼ä¾à
-	pprint(0x0d);				                            //»Ø³µ 
-	pprint(0x0d);				                            //»Ø³µ
-	for(i=0;i<strlen(DOBFJZ);i++)pprint(DOBFJZ[i]); 		//£¢DOB·Ö½çÖµ£¢
+//	pprint(0x1b);pprint(0x38);pprint(0x00);               	//è°ƒç”¨æ±‰å­—å‡ºåº“æŒ‡ä»¤ 	 ç±»å‹
+	pprint(0x1b);pprint(0x55);pprint(2);		            //å­—ä½“å¤§å°
+	pprint(0x1b);pprint(0x31);pprint(10);                 	//è¡Œé—´è·
+	pprint(0x0d);				                            //å›è½¦ 
+	pprint(0x0d);				                            //å›è½¦
+	for(i=0;i<strlen(DOBFJZ);i++)pprint(DOBFJZ[i]); 		//ï¼‚DOBåˆ†ç•Œå€¼ï¼‚
 	pprint(table[flag_dob/10]);										//4.0
 	pprint(D[0]);
 	pprint(table[flag_dob%10]);
-	pprint(0x0d);				                       		//»Ø³µ    
+	pprint(0x0d);				                       		//å›è½¦    
 	for(i=0;i<strlen(table1);i++)pprint(table1[i]); 	    //"__________"
-    print_time();//´òÓ¡¼ì²âÊ±¼ä
-	pprint(0x0d);				                            //»Ø³µ
-	for(i=0;i<strlen(TDH);i++)pprint(TDH[i]); 			   	//¼ì²âÍ¨µÀ£º
+    print_time();//æ‰“å°æ£€æµ‹æ—¶é—´
+	pprint(0x0d);				                            //å›è½¦
+	for(i=0;i<strlen(TDH);i++)pprint(TDH[i]); 			   	//æ£€æµ‹é€šé“ï¼š
 	pprint(table[checkChannel]);
 	
 	pprint(0x0d);
 	if(type)
-		for(i=0;i<strlen(NDD);i++)pprint(NDD[i]); 			   	//Å¨¶ÈµÍ
+		for(i=0;i<strlen(NDD);i++)pprint(NDD[i]); 			   	//æµ“åº¦ä½
 	else 
-		for(i=0;i<strlen(QDBC);i++)pprint(QDBC[i]); 			   	//Æø´ü±»°Î³ö	
+		for(i=0;i<strlen(QDBC);i++)pprint(QDBC[i]); 			   	//æ°”è¢‹è¢«æ‹”å‡º	
 	pprint(0x0d);
 	for(i=0;i<strlen(table2);i++)pprint(table2[i]); 	    //"********"
-	pprint(0x0d);				                        	//»Ø³µ 
-	for(i=0;i<strlen(JCJG);i++)pprint(JCJG[i]); 			//£¢¼ì²â½á¹û£¢
-	pprint(0x0d);				                            //»Ø³µ
-	pprint(0x0d);				                            //»Ø³µ 
-	pprint(0x0d);				                       		//»Ø³µ 			
+	pprint(0x0d);				                        	//å›è½¦ 
+	for(i=0;i<strlen(JCJG);i++)pprint(JCJG[i]); 			//ï¼‚æ£€æµ‹ç»“æœï¼‚
+	pprint(0x0d);				                            //å›è½¦
+	pprint(0x0d);				                            //å›è½¦ 
+	pprint(0x0d);				                       		//å›è½¦ 			
 }
 void print_power(u8 count,u8 type)
 {
@@ -3480,12 +3471,12 @@ void print_power(u8 count,u8 type)
 	long long C13_PJ_temp=0;
 	s32 C12_BZWC_temp=0;
 	s32 C13_BZWC_temp=0;
-	pprint(0x1b);pprint(0x38);pprint(0x00);               	//µ÷ÓÃºº×Ö³ö¿âÖ¸Áî 
-	pprint(0x1b);pprint(0x55);pprint(2);		            //×ÖÌå´óĞ¡
-	pprint(0x1b);pprint(0x31);pprint(2);                 	//ĞĞ¼ä¾à	
+	pprint(0x1b);pprint(0x38);pprint(0x00);               	//è°ƒç”¨æ±‰å­—å‡ºåº“æŒ‡ä»¤ 
+	pprint(0x1b);pprint(0x55);pprint(2);		            //å­—ä½“å¤§å°
+	pprint(0x1b);pprint(0x31);pprint(2);                 	//è¡Œé—´è·	
 	if(type==0)				                           
 	{	
-		pprint(0x0d);										  //»Ø³µ 
+		pprint(0x0d);										  //å›è½¦ 
 		pprint(table[count/10]);
 		pprint(table[count%10]);
 		pprint(table[0]);
@@ -3513,7 +3504,7 @@ void print_power(u8 count,u8 type)
 			pprint(table[9]);
 			pprint(table[9]);
 			pprint(table[9]);
-			pprint(table[9]);//¹âÇ¿Ì«´óÏÔÊ¾99999
+			pprint(table[9]);//å…‰å¼ºå¤ªå¤§æ˜¾ç¤º99999
 		}
 		else
 		{
@@ -3526,7 +3517,7 @@ void print_power(u8 count,u8 type)
 	}	
 	if(count==60)
 	{	
-		pprint(0x0d);										  //»Ø³µ
+		pprint(0x0d);										  //å›è½¦
 		C12_PJ=0;C13_PJ=0;
 		for(i=0;i<count;i++)
 		{
@@ -3545,31 +3536,31 @@ void print_power(u8 count,u8 type)
 		}
 		C12_BZWC= (long long)sqrt(C12_BZWC_temp/count);
 		C13_BZWC= (long long)sqrt(C13_BZWC_temp/count);
-		pprint(0x0d);				                            //»Ø³µ
+		pprint(0x0d);				                            //å›è½¦
 		if(type==0)
 		{
-			for(i=0;i<strlen(table1);i++)pprint(table1[i]); 	    //"¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª" 		
-			pprint(0x0d);				                            //»Ø³µ
-			for(i=0;i<strlen(GQ13);i++)pprint(GQ13[i]); 			//£¢´ÎÊı	C12		C13£¢
-			pprint(0x0d);											//»Ø³µ
+			for(i=0;i<strlen(table1);i++)pprint(table1[i]); 	    //"â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”" 		
+			pprint(0x0d);				                            //å›è½¦
+			for(i=0;i<strlen(GQ13);i++)pprint(GQ13[i]); 			//ï¼‚æ¬¡æ•°	C12		C13ï¼‚
+			pprint(0x0d);											//å›è½¦
 		}		
-		for(i=0;i<strlen(table1);i++)pprint(table1[i]); 	    //"¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª" 		
-		pprint(0x0d);				                            //»Ø³µ
-		pprint(0x1b);pprint(0x31);pprint(16);                 	//ĞĞ¼ä¾à
-		for(i=0;i<strlen(T13);i++)pprint(T13[i]); 			//£¢C13=£¢
+		for(i=0;i<strlen(table1);i++)pprint(table1[i]); 	    //"â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”" 		
+		pprint(0x0d);				                            //å›è½¦
+		pprint(0x1b);pprint(0x31);pprint(16);                 	//è¡Œé—´è·
+		for(i=0;i<strlen(T13);i++)pprint(T13[i]); 			//ï¼‚C13=ï¼‚
 		pprint(table[(C13_BZWC*1000/C13_PJ)/10]);
 		pprint(D[0]);
 		pprint(table[(C13_BZWC*1000/C13_PJ)%10]);
-	 	//pprint(0x0d);				                            //»Ø³µ
-		 for(i=0;i<strlen(KG1);i++)pprint(KG1[i]); 	            //"¿Õ¸ñ" 
-		for(i=0;i<strlen(T12);i++)pprint(T12[i]); 			//£¢C12=£¢
+	 	//pprint(0x0d);				                            //å›è½¦
+		 for(i=0;i<strlen(KG1);i++)pprint(KG1[i]); 	            //"ç©ºæ ¼" 
+		for(i=0;i<strlen(T12);i++)pprint(T12[i]); 			//ï¼‚C12=ï¼‚
 		pprint(table[(C12_BZWC*1000/C12_PJ)/10]);
 		pprint(D[0]);
 		pprint(table[(C12_BZWC*1000/C12_PJ)%10]);
-		pprint(0x0d);				                            //»Ø³µ
-		for(i=0;i<strlen(BYXS);i++)pprint(BYXS[i]); 			//"±äÒìÏµÊı"
-		pprint(0x0d);				                            //»Ø³µ
-		for(i=0;i<strlen(T13);i++)pprint(T13[i]); 			//£¢C13=£¢
+		pprint(0x0d);				                            //å›è½¦
+		for(i=0;i<strlen(BYXS);i++)pprint(BYXS[i]); 			//"å˜å¼‚ç³»æ•°"
+		pprint(0x0d);				                            //å›è½¦
+		for(i=0;i<strlen(T13);i++)pprint(T13[i]); 			//ï¼‚C13=ï¼‚
 		if(C13_BZWC>9999)
 		{
 			pprint(table[9]);
@@ -3599,9 +3590,9 @@ void print_power(u8 count,u8 type)
 		{
 			pprint(table[C13_BZWC]);
 		}
-		//pprint(0x0d);				                            //»Ø³µ
-		 for(i=0;i<strlen(KG1);i++)pprint(KG1[i]); 	            //"¿Õ¸ñ" 
-		for(i=0;i<strlen(T12);i++)pprint(T12[i]); 			//£¢C12=£¢
+		//pprint(0x0d);				                            //å›è½¦
+		 for(i=0;i<strlen(KG1);i++)pprint(KG1[i]); 	            //"ç©ºæ ¼" 
+		for(i=0;i<strlen(T12);i++)pprint(T12[i]); 			//ï¼‚C12=ï¼‚
 		if(C12_BZWC>9999)
 		{
 			pprint(table[9]);
@@ -3631,10 +3622,10 @@ void print_power(u8 count,u8 type)
 		{
 			pprint(table[C12_BZWC]);
 		}				
-		pprint(0x0d);				                            //»Ø³µ
-		for(i=0;i<strlen(GQBZWC);i++)pprint(GQBZWC[i]); 			//£¢¹âÇ¿±ê×¼Îó²î£¢
-		pprint(0x0d);											//»Ø³µ
-			for(i=0;i<strlen(T13);i++)pprint(T13[i]); 			//£¢C13=£¢
+		pprint(0x0d);				                            //å›è½¦
+		for(i=0;i<strlen(GQBZWC);i++)pprint(GQBZWC[i]); 			//ï¼‚å…‰å¼ºæ ‡å‡†è¯¯å·®ï¼‚
+		pprint(0x0d);											//å›è½¦
+			for(i=0;i<strlen(T13);i++)pprint(T13[i]); 			//ï¼‚C13=ï¼‚
 		if(C13_PJ>99999)
 		{
 			pprint(table[9]);
@@ -3651,8 +3642,8 @@ void print_power(u8 count,u8 type)
 			pprint(table[C13_PJ/10%10]);
 			pprint(table[C13_PJ%10]);
 		}	
-		pprint(0x0d);				                            //»Ø³µ
-		for(i=0;i<strlen(T12);i++)pprint(T12[i]); 			//£¢C12=£¢
+		pprint(0x0d);				                            //å›è½¦
+		for(i=0;i<strlen(T12);i++)pprint(T12[i]); 			//ï¼‚C12=ï¼‚
 		if(C12_PJ>99999)
 		{
 			pprint(table[9]);
@@ -3669,16 +3660,16 @@ void print_power(u8 count,u8 type)
 			pprint(table[C12_PJ/10%10]);
 			pprint(table[C12_PJ%10]);
 		}	
-		pprint(0x0d);				                            //»Ø³µ
-		for(i=0;i<strlen(GQPJ);i++)pprint(GQPJ[i]); 			//£¢¹âÇ¿Æ½¾ùÖµ£º£¢
-		pprint(0x0d);				                            //»Ø³µ
+		pprint(0x0d);				                            //å›è½¦
+		for(i=0;i<strlen(GQPJ);i++)pprint(GQPJ[i]); 			//ï¼‚å…‰å¼ºå¹³å‡å€¼ï¼šï¼‚
+		pprint(0x0d);				                            //å›è½¦
         print_date_time();
 		for(i=0;i<strlen(table2);i++)pprint(table2[i]); 	    //"********"
-		pprint(0x0d);											//»Ø³µ
-		for(i=0;i<strlen(GQJG);i++)pprint(GQJG[i]); 			//£¢¹âÇ¿¼ì²â½á¹û£¢
-	   	pprint(0x0d);				                            //»Ø³µ
-//		pprint(0x0d);				                            //»Ø³µ
-//		pprint(0x0d);				                            //»Ø³µ
+		pprint(0x0d);											//å›è½¦
+		for(i=0;i<strlen(GQJG);i++)pprint(GQJG[i]); 			//ï¼‚å…‰å¼ºæ£€æµ‹ç»“æœï¼‚
+	   	pprint(0x0d);				                            //å›è½¦
+//		pprint(0x0d);				                            //å›è½¦
+//		pprint(0x0d);				                            //å›è½¦
 
 		//collin add20141016
         Inqueue(0x02);
@@ -3728,33 +3719,33 @@ void print_power(u8 count,u8 type)
 	}		
 }
 
-void print_result(void)											//´òÓ¡»ú¼ì²â
+void print_result(void)											//æ‰“å°æœºæ£€æµ‹
 {	
 	u8 i;
 	DOB1=dob;
 	pprint(0x1c);pprint(0x26);
-//	pprint(0x1b);pprint(0x38);pprint(0x00);               	//µ÷ÓÃºº×Ö³ö¿âÖ¸Áî 
-	pprint(0x1b);pprint(0x55);pprint(2);		            //×ÖÌå´óĞ¡
-	pprint(0x1b);pprint(0x31);pprint(10);                 	//ĞĞ¼ä¾à
-	pprint(0x0d);				                            //»Ø³µ 
-	pprint(0x0d);				                            //»Ø³µ
-	for(i=0;i<strlen(DOBFJZ);i++)pprint(DOBFJZ[i]); 		//£¢DOB·Ö½çÖµ£¢
+//	pprint(0x1b);pprint(0x38);pprint(0x00);               	//è°ƒç”¨æ±‰å­—å‡ºåº“æŒ‡ä»¤ 
+	pprint(0x1b);pprint(0x55);pprint(2);		            //å­—ä½“å¤§å°
+	pprint(0x1b);pprint(0x31);pprint(10);                 	//è¡Œé—´è·
+	pprint(0x0d);				                            //å›è½¦ 
+	pprint(0x0d);				                            //å›è½¦
+	for(i=0;i<strlen(DOBFJZ);i++)pprint(DOBFJZ[i]); 		//ï¼‚DOBåˆ†ç•Œå€¼ï¼‚
 	pprint(table[ID[20]/10]);										//4.0
 	pprint(D[0]);
 	pprint(table[ID[20]%10]);
-	pprint(0x0d);				                       		//»Ø³µ    
+	pprint(0x0d);				                       		//å›è½¦    
 	for(i=0;i<strlen(table1);i++)pprint(table1[i]); 	    //"__________"
-    print_time();//´òÓ¡¼ì²âÊ±¼ä
-    for(i=0;i<strlen(JYR);i++)pprint(JYR[i]); 			   	//"¼ìÑéÈË£º_________"
+    print_time();//æ‰“å°æ£€æµ‹æ—¶é—´
+    for(i=0;i<strlen(JYR);i++)pprint(JYR[i]); 			   	//"æ£€éªŒäººï¼š_________"
     pprint(0x0d);
 	//collin mask20141124
-	/*				                       		//»Ø³µ
-	for(i=0;i<strlen(TDH);i++)pprint(TDH[i]); 			   	//¼ì²âÍ¨µÀ£º
+	/*				                       		//å›è½¦
+	for(i=0;i<strlen(TDH);i++)pprint(TDH[i]); 			   	//æ£€æµ‹é€šé“ï¼š
 	pprint(table[ID[6]]);	
 	pprint(0x0d);
 	*/
-	//end				                        	//»Ø³µ 
-	for(i=0;i<strlen(JG);i++)pprint(JG[i]); 			   	//½á¹û
+	//end				                        	//å›è½¦ 
+	for(i=0;i<strlen(JG);i++)pprint(JG[i]); 			   	//ç»“æœ
 	if((DOB1/10)>=flag_dob||((DOB1/10)<-cuozhi&&flag_cz==1&&(DOB1/10)<-flag_dob))
 	{
 		for(i=0;i<strlen(YANG);i++)
@@ -3764,8 +3755,8 @@ void print_result(void)											//´òÓ¡»ú¼ì²â
 	{
 		for(i=0;i<strlen(YIN);i++)pprint(YIN[i]);
 	}
-	pprint(0x0d);				                            //»Ø³µ
-	for(i=0;i<strlen(DOB);i++)pprint(DOB[i]); 				//£¢DOB(¡ë)=£¢	
+	pprint(0x0d);				                            //å›è½¦
+	for(i=0;i<strlen(DOB);i++)pprint(DOB[i]); 				//ï¼‚DOB(â€°)=ï¼‚	
     DOB1=DOB1/10;
     if(DOB1<0)
     {
@@ -3801,8 +3792,8 @@ void print_result(void)											//´òÓ¡»ú¼ì²â
 		pprint(D[0]);
 		pprint(table[(u16)(DOB1%10)]);	
 	}
-	pprint(0x0d);				                       		//»Ø³µ
-	for(i=0;i<strlen(YQND);i++)pprint(YQND[i]); 			//£¢ÑùÆøÅ¨¶È£¢
+	pprint(0x0d);				                       		//å›è½¦
+	for(i=0;i<strlen(YQND);i++)pprint(YQND[i]); 			//ï¼‚æ ·æ°”æµ“åº¦ï¼‚
     if((ID[17]+ID[18]*256)>9999)
     {
         pprint(table[(ID[17]+ID[18]*256)/10000]); 
@@ -3820,9 +3811,9 @@ void print_result(void)											//´òÓ¡»ú¼ì²â
         pprint(table[(ID[17]+ID[18]*256)/10%10]);
     	pprint(table[(ID[17]+ID[18]*256)%10]); 
     }
-	for(i=0;i<strlen(BFH);i++)pprint(BFH[i]);				//£¥
-	pprint(0x0d);				                       		//»Ø³µ
-	for(i=0;i<strlen(DQND);i++)pprint(DQND[i]); 			//£¢µ×ÆøÅ¨¶È£¢
+	for(i=0;i<strlen(BFH);i++)pprint(BFH[i]);				//ï¼…
+	pprint(0x0d);				                       		//å›è½¦
+	for(i=0;i<strlen(DQND);i++)pprint(DQND[i]); 			//ï¼‚åº•æ°”æµ“åº¦ï¼‚
 	if((ID[4]+ID[5]*256)>9999)
     {
         pprint(table[(ID[4]+ID[5]*256)/10000]); 
@@ -3840,47 +3831,47 @@ void print_result(void)											//´òÓ¡»ú¼ì²â
         pprint(table[(ID[4]+ID[5]*256)/10%10]);
     	pprint(table[(ID[4]+ID[5]*256)%10]); 
     }
-	for(i=0;i<strlen(BFH);i++)pprint(BFH[i]);				//£¥ 
-	pprint(0x0d);				                       		//»Ø³µ
-    for(i=0;i<strlen(XM);i++)pprint(XM[i]); 			//£¢ĞÕÃû:_________£¢
-    pprint(0x0d);				                       		//»Ø³µ
-	for(i=0;i<strlen(YPBH);i++)pprint(YPBH[i]); 			//£¢ÑùÆ·±àºÅ£¢
+	for(i=0;i<strlen(BFH);i++)pprint(BFH[i]);				//ï¼… 
+	pprint(0x0d);				                       		//å›è½¦
+    for(i=0;i<strlen(XM);i++)pprint(XM[i]); 			//ï¼‚å§“å:_________ï¼‚
+    pprint(0x0d);				                       		//å›è½¦
+	for(i=0;i<strlen(YPBH);i++)pprint(YPBH[i]); 			//ï¼‚æ ·å“ç¼–å·ï¼‚
 	pprint(table[Num/10000]);
 	pprint(table[Num/1000%10]);
 	pprint(table[Num/100%10]);
 	pprint(table[Num/10%10]);
 	pprint(table[Num%10]);
-	pprint(0x0d);				                        	//»Ø³µ
+	pprint(0x0d);				                        	//å›è½¦
 	for(i=0;i<strlen(table2);i++)pprint(table2[i]); 	    //"********"
-	pprint(0x0d);				                        	//»Ø³µ 
-	for(i=0;i<strlen(JCJG);i++)pprint(JCJG[i]); 			//£¢¼ì²â½á¹û£¢
-	pprint(0x0d);				                            //»Ø³µ
-	pprint(0x0d);				                            //»Ø³µ 
-	pprint(0x0d);				                       		//»Ø³µ 
+	pprint(0x0d);				                        	//å›è½¦ 
+	for(i=0;i<strlen(JCJG);i++)pprint(JCJG[i]); 			//ï¼‚æ£€æµ‹ç»“æœï¼‚
+	pprint(0x0d);				                            //å›è½¦
+	pprint(0x0d);				                            //å›è½¦ 
+	pprint(0x0d);				                       		//å›è½¦ 
 }
 
-void print_result_search(void)											//´òÓ¡»ú¼ì²â
+void print_result_search(void)											//æ‰“å°æœºæ£€æµ‹
 {	
 	u8 i;
 	//collin add20141120
 	DOB1 = (ID[0]<<8)+ID[1];
 	//end 
 	pprint(0x1c);pprint(0x26);
-//	pprint(0x1b);pprint(0x38);pprint(0x00);               	//µ÷ÓÃºº×Ö³ö¿âÖ¸Áî 
-	pprint(0x1b);pprint(0x55);pprint(2);		            //×ÖÌå´óĞ¡
-	pprint(0x1b);pprint(0x31);pprint(10);                 	//ĞĞ¼ä¾à
-	pprint(0x0d);				                            //»Ø³µ
-	for(i=0;i<strlen(DOBFJZ);i++)pprint(DOBFJZ[i]); 		//£¢DOB·Ö½çÖµ£¢
+//	pprint(0x1b);pprint(0x38);pprint(0x00);               	//è°ƒç”¨æ±‰å­—å‡ºåº“æŒ‡ä»¤ 
+	pprint(0x1b);pprint(0x55);pprint(2);		            //å­—ä½“å¤§å°
+	pprint(0x1b);pprint(0x31);pprint(10);                 	//è¡Œé—´è·
+	pprint(0x0d);				                            //å›è½¦
+	for(i=0;i<strlen(DOBFJZ);i++)pprint(DOBFJZ[i]); 		//ï¼‚DOBåˆ†ç•Œå€¼ï¼‚
 	pprint(table[ID[20]/10]);										//4.0
 	pprint(D[0]);
 	pprint(table[ID[20]%10]);
 //	pprint(table[ID[19]/10%10]);										//4.0
 //	pprint(D[0]);
 //	pprint(table[ID[19]%10]);
-	pprint(0x0d);				                       		//»Ø³µ
+	pprint(0x0d);				                       		//å›è½¦
 	for(i=0;i<strlen(table1);i++)pprint(table1[i]); 	    //"__________"
-	pprint(0x0d);				                        	//»Ø³µ
-    for(i=0;i<strlen(SJ);i++)pprint(SJ[i]); 	            //"Ê±¼ä:"       
+	pprint(0x0d);				                        	//å›è½¦
+    for(i=0;i<strlen(SJ);i++)pprint(SJ[i]); 	            //"æ—¶é—´:"       
     pprint(table[2]);
 	pprint(table[0]);
 	pprint(table[ID[7]]);
@@ -3891,28 +3882,28 @@ void print_result_search(void)											//´òÓ¡»ú¼ì²â
     pprint(J[1]);
     pprint(table[ID[11]]);
 	pprint(table[ID[12]]);
-    for(i=0;i<strlen(KG1);i++)pprint(KG1[i]); 	            //"¿Õ¸ñ"
+    for(i=0;i<strlen(KG1);i++)pprint(KG1[i]); 	            //"ç©ºæ ¼"
     pprint(table[ID[13]]);
 	pprint(table[ID[14]]);
     pprint(J[2]);
     pprint(table[ID[15]]);
 	pprint(table[ID[16]]);   
-    pprint(0x0d);				                            //»Ø³µ 
+    pprint(0x0d);				                            //å›è½¦ 
 	//collin mask2014
 	/*   
-	for(i=0;i<strlen(TDH);i++)pprint(TDH[i]); 			   	//¼ì²âÍ¨µÀ£º
+	for(i=0;i<strlen(TDH);i++)pprint(TDH[i]); 			   	//æ£€æµ‹é€šé“ï¼š
 	pprint(table[ID[6]]);							
 	pprint(0x0d);
 	*/
-	//end				                        	//»Ø³µ 
-	for(i=0;i<strlen(JG);i++)pprint(JG[i]); 			   	//½á¹û
+	//end				                        	//å›è½¦ 
+	for(i=0;i<strlen(JG);i++)pprint(JG[i]); 			   	//ç»“æœ
 	//collin modify20141121
 	//if(DOB1>=ID[20]||((DOB1)>cuozhi&&flag_cz==1&&ZF==1)){for(i=0;i<strlen(YANG);i++)pprint(YANG[i]);}
 	if(abs(DOB1/10)>=ID[20]||((abs(DOB1))>cuozhi&&flag_cz==1&&ZF==1)){for(i=0;i<strlen(YANG);i++)pprint(YANG[i]);}
 	//end
 	else{for(i=0;i<strlen(YIN);i++)pprint(YIN[i]);}
-	pprint(0x0d);				                            //»Ø³µ
-	for(i=0;i<strlen(DOB);i++)pprint(DOB[i]); 				//£¢DOB(¡ë)=£¢
+	pprint(0x0d);				                            //å›è½¦
+	for(i=0;i<strlen(DOB);i++)pprint(DOB[i]); 				//ï¼‚DOB(â€°)=ï¼‚
 	//collin add20141120
 	DOB1=DOB1/10;
 	 if(DOB1<0)
@@ -3950,8 +3941,8 @@ void print_result_search(void)											//´òÓ¡»ú¼ì²â
 		pprint(D[0]);
 		pprint(table[(u16)(DOB1%10)]);	
 	}
-	pprint(0x0d);				                       		//»Ø³µ
-	for(i=0;i<strlen(YQND);i++)pprint(YQND[i]); 			//£¢ÑùÆøÅ¨¶È£¢
+	pprint(0x0d);				                       		//å›è½¦
+	for(i=0;i<strlen(YQND);i++)pprint(YQND[i]); 			//ï¼‚æ ·æ°”æµ“åº¦ï¼‚
 	if((ID[17]+ID[18]*256)>9999)
     {
         pprint(table[(ID[17]+ID[18]*256)/10000]); 
@@ -3969,9 +3960,9 @@ void print_result_search(void)											//´òÓ¡»ú¼ì²â
         pprint(table[(ID[17]+ID[18]*256)/10%10]);
     	pprint(table[(ID[17]+ID[18]*256)%10]); 
     }
-	for(i=0;i<strlen(BFH);i++)pprint(BFH[i]);				//£¥
-	pprint(0x0d);				                       		//»Ø³µ
-	for(i=0;i<strlen(DQND);i++)pprint(DQND[i]); 			//£¢µ×ÆøÅ¨¶È£¢
+	for(i=0;i<strlen(BFH);i++)pprint(BFH[i]);				//ï¼…
+	pprint(0x0d);				                       		//å›è½¦
+	for(i=0;i<strlen(DQND);i++)pprint(DQND[i]); 			//ï¼‚åº•æ°”æµ“åº¦ï¼‚
 	if((ID[4]+ID[5]*256)>9999)
     {
         pprint(table[(ID[4]+ID[5]*256)/10000]); 
@@ -3989,9 +3980,9 @@ void print_result_search(void)											//´òÓ¡»ú¼ì²â
         pprint(table[(ID[4]+ID[5]*256)/10%10]);
     	pprint(table[(ID[4]+ID[5]*256)%10]); 
     }
-	for(i=0;i<strlen(BFH);i++)pprint(BFH[i]);				//£¥
-	pprint(0x0d);				                       		//»Ø³µ
-	for(i=0;i<strlen(YPBH);i++)pprint(YPBH[i]); 			//£¢ÑùÆ·±àºÅ£¢
+	for(i=0;i<strlen(BFH);i++)pprint(BFH[i]);				//ï¼…
+	pprint(0x0d);				                       		//å›è½¦
+	for(i=0;i<strlen(YPBH);i++)pprint(YPBH[i]); 			//ï¼‚æ ·å“ç¼–å·ï¼‚
 	//collin modify20141121
 	/*
 	pprint(table[DiapIndex/10000]);
@@ -4005,24 +3996,24 @@ void print_result_search(void)											//´òÓ¡»ú¼ì²â
 	pprint(table[ID_NUM/100%10]);
 	pprint(table[ID_NUM/10%10]);
 	pprint(table[ID_NUM%10]);
-    pprint(0x0d);				                            //»Ø³µ
+    pprint(0x0d);				                            //å›è½¦
 	for(i=0;i<strlen(table2);i++)pprint(table2[i]); 	    //"***********"
-	pprint(0x0d);				                        	//»Ø³µ
-	for(i=0;i<strlen(JCJG);i++)pprint(JCJG[i]); 			//£¢¼ì²â½á¹û£¢
+	pprint(0x0d);				                        	//å›è½¦
+	for(i=0;i<strlen(JCJG);i++)pprint(JCJG[i]); 			//ï¼‚æ£€æµ‹ç»“æœï¼‚
 	ZF=0;
-	pprint(0x0d);				                            //»Ø³µ
-	pprint(0x0d);				                            //»Ø³µ 
-	pprint(0x0d);				                       		//»Ø³µ 
+	pprint(0x0d);				                            //å›è½¦
+	pprint(0x0d);				                            //å›è½¦ 
+	pprint(0x0d);				                       		//å›è½¦ 
 }
-void print_result_qc(void)									  //´òÓ¡ÖÊ¿Ø½á¹û
+void print_result_qc(void)									  //æ‰“å°è´¨æ§ç»“æœ
 {
 	u8 i;
 	pprint(0x1c);pprint(0x26);
-//	pprint(0x1b);pprint(0x38);pprint(0x00);               	//µ÷ÓÃºº×Ö³ö¿âÖ¸Áî 
-	pprint(0x1b);pprint(0x55);pprint(2);		            //×ÖÌå´óĞ¡
-	pprint(0x1b);pprint(0x31);pprint(10);                 	//ĞĞ¼ä¾à
-	pprint(0x0d);				                            //»Ø³µ
-	for(i=0;i<strlen(BZWC1);i++)pprint(BZWC1[i]); 			//£¢±ê×¼Îó²î£º£¢							
+//	pprint(0x1b);pprint(0x38);pprint(0x00);               	//è°ƒç”¨æ±‰å­—å‡ºåº“æŒ‡ä»¤ 
+	pprint(0x1b);pprint(0x55);pprint(2);		            //å­—ä½“å¤§å°
+	pprint(0x1b);pprint(0x31);pprint(10);                 	//è¡Œé—´è·
+	pprint(0x0d);				                            //å›è½¦
+	for(i=0;i<strlen(BZWC1);i++)pprint(BZWC1[i]); 			//ï¼‚æ ‡å‡†è¯¯å·®ï¼šï¼‚							
 	if(BZWC>=100)
 	{
 		pprint(table[9]);
@@ -4035,8 +4026,8 @@ void print_result_qc(void)									  //´òÓ¡ÖÊ¿Ø½á¹û
 		pprint(D[0]);
 		pprint(table[(u16)(BZWC%10)]);	
 	}
-	pprint(0x0d);				                            //»Ø³µ
-	for(i=0;i<strlen(PJZ);i++)pprint(PJZ[i]); 				//£¢  Æ½¾ùÖµ£º£¢
+	pprint(0x0d);				                            //å›è½¦
+	for(i=0;i<strlen(PJZ);i++)pprint(PJZ[i]); 				//ï¼‚  å¹³å‡å€¼ï¼šï¼‚
 	if(ZF==1)pprint(J[1]);
 	if(DOB_PJ>999)
 	{
@@ -4058,66 +4049,66 @@ void print_result_qc(void)									  //´òÓ¡ÖÊ¿Ø½á¹û
 		pprint(D[0]);
 		pprint(table[(u16)(DOB_PJ%10)]);	
 	} 
-	pprint(0x0d);				                            //»Ø³µ
+	pprint(0x0d);				                            //å›è½¦
     print_date_time();
 	for(i=0;i<strlen(table2);i++)pprint(table2[i]); 	    //"********"
-	pprint(0x0d);				                        	//»Ø³µ 
-	for(i=0;i<strlen(ZK);i++)pprint(ZK[i]); 			//£¢ÖÊÁ¿¿ØÖÆ½á¹û£¢
-	pprint(0x0d);				                            //»Ø³µ
-	pprint(0x0d);				                            //»Ø³µ
-	pprint(0x0d);				                            //»Ø³µ
+	pprint(0x0d);				                        	//å›è½¦ 
+	for(i=0;i<strlen(ZK);i++)pprint(ZK[i]); 			//ï¼‚è´¨é‡æ§åˆ¶ç»“æœï¼‚
+	pprint(0x0d);				                            //å›è½¦
+	pprint(0x0d);				                            //å›è½¦
+	pprint(0x0d);				                            //å›è½¦
 }
-void print_filter(s16 Filter)											//¹ıÂËÆ÷¼ì²â
+void print_filter(s16 Filter)											//è¿‡æ»¤å™¨æ£€æµ‹
 {	
 	u8 i;
 	pprint(0x1c);pprint(0x26); 
-//	pprint(0x1b);pprint(0x38);pprint(0x00);               	//µ÷ÓÃºº×Ö³ö¿âÖ¸Áî 
-	pprint(0x1b);pprint(0x55);pprint(2);		            //×ÖÌå´óĞ¡
-	pprint(0x1b);pprint(0x31);pprint(10);                 	//ĞĞ¼ä¾à
+//	pprint(0x1b);pprint(0x38);pprint(0x00);               	//è°ƒç”¨æ±‰å­—å‡ºåº“æŒ‡ä»¤ 
+	pprint(0x1b);pprint(0x55);pprint(2);		            //å­—ä½“å¤§å°
+	pprint(0x1b);pprint(0x31);pprint(10);                 	//è¡Œé—´è·
     print_time();	
     for(i=0;i<strlen(table1);i++)pprint(table1[i]); 	    //"________"
-	pprint(0x0d);				                            //»Ø³µ
-	for(i=0;i<strlen(GLQXN);i++)pprint(GLQXN[i]); 			//£¢¹ıÂËÆ÷Ğ§ÄÜ£º£¢
+	pprint(0x0d);				                            //å›è½¦
+	for(i=0;i<strlen(GLQXN);i++)pprint(GLQXN[i]); 			//ï¼‚è¿‡æ»¤å™¨æ•ˆèƒ½ï¼šï¼‚
 	pprint(table[Filter/1000]);
     pprint(D[0]);
     pprint(table[Filter/100%10]);
 	pprint(table[Filter/10%10]);
 	pprint(table[Filter%10]);
-	pprint(0x0d);				                            //»Ø³µ
+	pprint(0x0d);				                            //å›è½¦
 	if(Filter>990)
 	{
-		for(i=0;i<strlen(GHGLQ);i++)pprint(GHGLQ[i]); 	//Çë¸ü»»¹ıÂËÆ÷	
-		pprint(0x0d);				                            //»Ø³µ
-		for(i=0;i<strlen(GLQXNBZ);i++)pprint(GLQXNBZ[i]);  //¹ıÂËÆ÷Ğ§ÄÜ²»×ã
+		for(i=0;i<strlen(GHGLQ);i++)pprint(GHGLQ[i]); 	//è¯·æ›´æ¢è¿‡æ»¤å™¨	
+		pprint(0x0d);				                            //å›è½¦
+		for(i=0;i<strlen(GLQXNBZ);i++)pprint(GLQXNBZ[i]);  //è¿‡æ»¤å™¨æ•ˆèƒ½ä¸è¶³
 	}
 	else
 	{
-		for(i=0;i<strlen(GLQXNLH);i++)pprint(GLQXNLH[i]);	//¹ıÂËÆ÷Ğ§ÄÜÁ¼ºÃ
+		for(i=0;i<strlen(GLQXNLH);i++)pprint(GLQXNLH[i]);	//è¿‡æ»¤å™¨æ•ˆèƒ½è‰¯å¥½
 	}  
-	pprint(0x0d);				                            //»Ø³µ
+	pprint(0x0d);				                            //å›è½¦
 	for(i=0;i<strlen(table2);i++)pprint(table2[i]); 	    //"********"
-	pprint(0x0d);				                        	//»Ø³µ 
-	for(i=0;i<strlen(GLQJC);i++)pprint(GLQJC[i]);		   	//¹ıÂËÆ÷¼ì²â    	
-	pprint(0x0d);				                            //»Ø³µ 
-	pprint(0x0d);				                            //»Ø³µ 
-	pprint(0x0d);				                       		//»Ø³µ      
+	pprint(0x0d);				                        	//å›è½¦ 
+	for(i=0;i<strlen(GLQJC);i++)pprint(GLQJC[i]);		   	//è¿‡æ»¤å™¨æ£€æµ‹    	
+	pprint(0x0d);				                            //å›è½¦ 
+	pprint(0x0d);				                            //å›è½¦ 
+	pprint(0x0d);				                       		//å›è½¦      
 }
 /************************************************************/
-void print_date_time(void)                                         //´òÓ¡ÈÕÆÚÊ±¼ä
+void print_date_time(void)                                         //æ‰“å°æ—¥æœŸæ—¶é—´
 {
     u8 i;
     GetDate();
 	GetTime();
     for(i=0;i<strlen(table1);i++)pprint(table1[i]); 	    //"--------------"
-    pprint(0x0d);				                            //»Ø³µ
-    for(i=0;i<strlen(SJ);i++)pprint(SJ[i]); 	            //"Ê±¼ä:"       
+    pprint(0x0d);				                            //å›è½¦
+    for(i=0;i<strlen(SJ);i++)pprint(SJ[i]); 	            //"æ—¶é—´:"       
     pprint(table[timer.hour/10]);
 	pprint(table[timer.hour%10]);
     pprint(J[2]);
     pprint(table[timer.min/10]);
 	pprint(table[timer.min%10]);
-    pprint(0x0d);				                            //»Ø³µ
-    for(i=0;i<strlen(RQ);i++)pprint(RQ[i]); 	            //"ÈÕÆÚ:" 
+    pprint(0x0d);				                            //å›è½¦
+    for(i=0;i<strlen(RQ);i++)pprint(RQ[i]); 	            //"æ—¥æœŸ:" 
     pprint(table[2]);
 	pprint(table[0]);
 	pprint(table[timer.w_year/10%10]);
@@ -4128,38 +4119,38 @@ void print_date_time(void)                                         //´òÓ¡ÈÕÆÚÊ±¼
     pprint(J[1]);
     pprint(table[timer.w_date/10]);
 	pprint(table[timer.w_date%10]);
-    pprint(0x0d);				                            //»Ø³µ    
+    pprint(0x0d);				                            //å›è½¦    
 }
 
 void print_temperature(u8 type)
 {
 	u8 i;
 	pprint(0x1c);pprint(0x26);
-//	pprint(0x1b);pprint(0x38);pprint(0x00);               	//µ÷ÓÃºº×Ö³ö¿âÖ¸Áî 	 ÀàĞÍ
-	pprint(0x1b);pprint(0x55);pprint(2);		            //×ÖÌå´óĞ¡
-	pprint(0x1b);pprint(0x31);pprint(10);                 	//ĞĞ¼ä¾à
-	pprint(0x0d);				                            //»Ø³µ 
-	print_time();//´òÓ¡¼ì²âÊ±¼ä
-	pprint(0x0d);				                            //»Ø³µ 
+//	pprint(0x1b);pprint(0x38);pprint(0x00);               	//è°ƒç”¨æ±‰å­—å‡ºåº“æŒ‡ä»¤ 	 ç±»å‹
+	pprint(0x1b);pprint(0x55);pprint(2);		            //å­—ä½“å¤§å°
+	pprint(0x1b);pprint(0x31);pprint(10);                 	//è¡Œé—´è·
+	pprint(0x0d);				                            //å›è½¦ 
+	print_time();//æ‰“å°æ£€æµ‹æ—¶é—´
+	pprint(0x0d);				                            //å›è½¦ 
 //	pprint(0x1c);pprint(0x26);
 	if(type)
-		for(i=0;i<strlen(WDZC);i++)pprint(WDZC[i]); 			//£¢ÎÂ¶ÈÕı³££¢
+		for(i=0;i<strlen(WDZC);i++)pprint(WDZC[i]); 			//ï¼‚æ¸©åº¦æ­£å¸¸ï¼‚
 	else
-		for(i=0;i<strlen(WDYC);i++)pprint(WDYC[i]); 			//£¢ÎÂ¶ÈÒì³££¢
+		for(i=0;i<strlen(WDYC);i++)pprint(WDYC[i]); 			//ï¼‚æ¸©åº¦å¼‚å¸¸ï¼‚
 	for(i=0;i<strlen(table2);i++)pprint(table2[i]); 	    //"********"
-	pprint(0x0d);				                        	//»Ø³µ 
-	for(i=0;i<strlen(WDJC);i++)pprint(WDJC[i]); 			//£¢ÎÂ¶È¼ì²â£¢
-	pprint(0x0d);				                            //»Ø³µ
-	pprint(0x0d);				                            //»Ø³µ 
-	pprint(0x0d);				                       		//»Ø³µ 	
+	pprint(0x0d);				                        	//å›è½¦ 
+	for(i=0;i<strlen(WDJC);i++)pprint(WDJC[i]); 			//ï¼‚æ¸©åº¦æ£€æµ‹ï¼‚
+	pprint(0x0d);				                            //å›è½¦
+	pprint(0x0d);				                            //å›è½¦ 
+	pprint(0x0d);				                       		//å›è½¦ 	
 }
 
-void deleteRecord(void)    //É¾³ı¼ÇÂ¼
+void deleteRecord(void)    //åˆ é™¤è®°å½•
 {
 	
-	SPI_FLASH_SectorErase(0x7E0000);	 //ÑùÆ·±àºÅ
-	SPI_FLASH_SectorErase(0x9E0000);	 //²ÎÊı
-	SPI_FLASH_SectorErase(0x010000);	//²Á³ıËùÓĞ¼ì²â¼ÇÂ¼
+	SPI_FLASH_SectorErase(0x7E0000);	 //æ ·å“ç¼–å·
+	SPI_FLASH_SectorErase(0x9E0000);	 //å‚æ•°
+	SPI_FLASH_SectorErase(0x010000);	//æ“¦é™¤æ‰€æœ‰æ£€æµ‹è®°å½•
 	SPI_FLASH_SectorErase(0x020000);
 	SPI_FLASH_SectorErase(0x030000);
 	SPI_FLASH_SectorErase(0x040000);
@@ -4169,7 +4160,7 @@ void deleteRecord(void)    //É¾³ı¼ÇÂ¼
 	SPI_FLASH_SectorErase(0x080000);
 	SPI_FLASH_SectorErase(0x090000);
 	SPI_FLASH_SectorErase(0x100000);
-	SPI_FLASH_SectorErase(0x110000);	//²Á³ıËùÓĞ¼ì²â¼ÇÂ¼
+	SPI_FLASH_SectorErase(0x110000);	//æ“¦é™¤æ‰€æœ‰æ£€æµ‹è®°å½•
 	SPI_FLASH_SectorErase(0x120000);
 	SPI_FLASH_SectorErase(0x130000);
 	SPI_FLASH_SectorErase(0x140000);
@@ -4188,7 +4179,7 @@ void deleteRecord(void)    //É¾³ı¼ÇÂ¼
 		else  flag_cz=1;
     if(N[3]==0xff)cuozhi=40;
     else    cuozhi=N[3];
-//	SPI_FLASH_SectorErase(0x8F0000);            //²Á³ıÒÇÆ÷±àºÅ
+//	SPI_FLASH_SectorErase(0x8F0000);            //æ“¦é™¤ä»ªå™¨ç¼–å·
     SPI_FLASH_BufferRead(N,0x8F0000,8);
     if(N[0]==0xff)
     {
@@ -4198,8 +4189,8 @@ void deleteRecord(void)    //É¾³ı¼ÇÂ¼
 	{
 		YH08=N[1]*100000+N[2]*10000+N[3]*1000+N[4]*100+N[5]*10+N[6];
 	}
-//	SPI_FLASH_SectorErase(0x7E0000);            //²Á³ıÑùÆ·±àºÅ
-	SPI_FLASH_BufferRead(ID,0x7E0000,30);		//¶ÁÈ¡ÑùÆ·±àºÅ
+//	SPI_FLASH_SectorErase(0x7E0000);            //æ“¦é™¤æ ·å“ç¼–å·
+	SPI_FLASH_BufferRead(ID,0x7E0000,30);		//è¯»å–æ ·å“ç¼–å·
 	if(ID[2]==0xff&&ID[3]==0xff)
 	{
 		Num=0;		
